@@ -1,3 +1,3 @@
 # Dilettante Capital
 
-Amateur market trader and investor.
+Ordo ab Chao
