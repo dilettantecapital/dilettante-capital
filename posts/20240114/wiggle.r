@@ -14,6 +14,10 @@ ssd <- function(a, b) {
     sum((a - b)^2)
 }
 
+relerr <- function(a, b) {
+    100 * (b - a) / a
+}
+
 optimize(function(i) {
     d0 <- ssd(i, phi)
     d1 <- ssd(i * i, e)
@@ -61,3 +65,15 @@ filt <- grow[1 <= grow & grow < 2]
 index <- seq(1, 2, length.out = length(filt))
 plot(density(log(grow), adjust = 0.1))
 plot(index, log(sort(filt)) - log(index), type = "l")
+
+# findings
+
+31.86
+666.79 / e^3
+relerr(31.86, 666.79 / e^3)
+
+666.79
+
+4808.93
+666.79 * e^2
+relerr(4808.93, 666.79 * e^2)
