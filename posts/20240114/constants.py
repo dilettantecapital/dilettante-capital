@@ -46,4 +46,13 @@ if __name__ == "__main__":
     test_precision(recurse_e)
 
     x = newtons_root(47)
-    print(x * x)
+    print("  ", x * x)
+
+    print("--")
+
+    phi = recurse_phi(67)
+    e = recurse_e(27)
+
+    print(1 + phi)
+    print(phi * phi)
+    print(e)
