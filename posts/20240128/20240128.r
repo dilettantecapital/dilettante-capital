@@ -15,6 +15,8 @@ relerr <- function(new, old) {
 spx <- "^GSPC" %>%
     yahoo()
 
+range(spx$date)
+
 
 # TRANSFORMATION
 
@@ -39,6 +41,11 @@ prm_5y <- par_johnson(na_omit(spx_mom$lgp_5y))
 x_quarter <- na_omit(spx_mom$lgp_quarter)
 x_5y <- na_omit(spx_mom$lgp_5y)
 
+mean(x_quarter) / 63
+mean(x_5y) / 1260
+median(x_quarter) / 63
+median(x_5y) / 1260
+
 100 * exp(mean(x_quarter) / 100) - 100
 100 * exp(mean(x_5y) / 100) - 100
 
@@ -47,6 +54,9 @@ x_5y <- na_omit(spx_mom$lgp_5y)
 
 100 * mean(x_quarter < 0)
 100 * mean(x_5y < 0)
+
+mean(x_quarter) / sd(x_quarter)
+mean(x_5y) / sd(x_5y)
 
 
 # PLOTTING
