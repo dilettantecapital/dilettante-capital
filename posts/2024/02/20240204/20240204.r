@@ -18,6 +18,22 @@ parse_info_box <- function(div) {
         trimws()
 }
 
+parse_table <- function(html) {
+    ticker <- html %>%
+        html_node("div.company-code") %>%
+        html_text() %>%
+        clean_text()
+
+    tab <- html %>%
+        html_node("table") %>%
+        html_table() %>%
+        setNames(c("year", "item", "change"))
+
+    tab %>%
+        mutate(ticker) %>%
+        select(ticker, year, item)
+}
+
 
 # SETUP
 
@@ -88,49 +104,76 @@ df_info <- htmls_cap %>%
     }) %>%
     do.call(rbind, .)
 
-df_info
+df_info %>%
+    filter(ticker == "DHR")
 
-df_ps <- htmls %>%
-    lapply(function(html) {
-        ticker <- html %>%
-            html_node("div.company-code") %>%
-            html_text() %>%
-            clean_text()
+df_cap_raw <- htmls_cap %>%
+    lapply(parse_table) %>%
+    do.call(rbind, .)
 
-        tab <- html %>%
-            html_node("table") %>%
-            html_table() %>%
-            setNames(c("year", "ps", "change"))
-
-        tab %>%
-            mutate(ticker) %>%
-            select(ticker, year, ps) %>%
-            mutate(ps = as.double(ps))
-    }) %>%
+df_rev_raw <- htmls_rev %>%
+    lapply(parse_table) %>%
     do.call(rbind, .)
 
 
-# ANALYSIS
+# TRANSFORMATION
 
 
-df_year <- df_ps %>%
-    na.omit() %>%
-    mutate(lg_ps = log(ps)) %>%
+df_cap <- df_cap_raw %>%
+    rename(cap = item) %>%
+    mutate(year = as.integer(gsub("[^0-9]", "", year)),
+           cap = gsub("\\$", "", cap),
+           cap = gsub(" T", "e12", cap),
+           cap = gsub(" B", "e9", cap),
+           cap = as.numeric(cap))
+
+df_rev <- df_rev_raw %>%
+    rename(rev = item) %>%
+    mutate(year = as.integer(gsub("[^0-9]", "", year)),
+           rev = gsub("\\$", "", rev),
+           rev = gsub(" T", "e12", rev),
+           rev = gsub(" B", "e9", rev),
+           rev = gsub(" M", "e6", rev),
+           rev = as.numeric(rev))
+
+df_ps <- df_cap %>%
+    left_join(df_rev) %>%
+    mutate(ps = cap / rev,
+           lg_ps = log(ps)) %>%
+    na.omit()
+
+df_yr_cap <- df_ps %>%
     group_by(year) %>%
-    summarize(lg_ps = mean(lg_ps)) %>%
+    summarize(cap = mean(cap)) %>%
+    arrange(-year)
+
+df_yr <- df_ps %>%
+    group_by(year) %>%
+    summarize(lg_ps_cap = mean(cap * lg_ps)) %>%
     arrange(-year) %>%
-    mutate(ps = exp(lg_ps))
+    left_join(df_yr_cap) %>%
+    mutate(lg_ps = lg_ps_cap / cap,
+           ps = exp(lg_ps))
 
 
 # PLOTTING
 
 
-df_year %>%
+df_yr %>%
     with({
         pdf(here("ps_ratio.pdf"), 9, 6)
+        op <- par(mar = c(5.5, 5, 3.5, 2))
 
-        plot(year, ps, type = "l")
+        plot(year, ps, type = "n",
+             main = "Cap-Weighted P/S of Current 100 Largest US Companies",
+             xlab = "", ylab = "Price-to-Sales",
+             xaxt = "n")
+        axis(1, 2000:2030, las = 2)
+        abline(h = 1:6, v = 2000:2030, col = "lightblue")
+        lines(year, ps, lwd = 2)
+
         plot(year, lg_ps, type = "l")
 
+        par(op)
         dev.off()
     })
