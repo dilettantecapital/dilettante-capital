@@ -1,41 +1,6 @@
 source("lib/library.r")
 
 
-# PREAMBLE
-
-
-# Ratios:
-# - Debt-to-Equity Ratio
-#   - Debt / (Total Assets - Total Liabilities)
-#   - This measures the proportion of debt financing compared to equity
-#     financing.
-# - Debt-to-Total Assets Ratio
-#   - Debt / Total Assets
-#   - This measures the proportion of debt financing compared to all assets.
-# - Current Ratio
-#   - Current Assets / Current Liabilities
-#   - This measures a company's ability to meet short-term obligations with its
-#     short-term assets.
-# - Cash Ratio
-#   - Cash / Current Liabilities
-#   - This measures a company's ability to meet short-term obligations with its
-#     most liquid asset.
-# - Asset Turnover Ratio
-#   - Revenue / Total Assets
-#   - This measures how efficiently a company uses its assets to generate
-#     revenue.
-# - Return on Assets (ROA)
-#   - Income / Total Assets
-#   - This measures the profitability of a company relative to its total
-#     assets.
-
-# Derived Line Items:
-# - Net Income
-#   - Revenue - Expenses
-# - Total Liabilities + Equity
-#   - Total Assets
-
-
 # SETUP
 
 
@@ -283,6 +248,294 @@ df_yr %>%
         axis(1, 2000:2030, las = 2)
         abline(h = seq(0, 100, 2.5), v = 2000:2030, col = "lightblue")
         lines(year, db, lwd = 2)
+
+        par(op)
+        dev.off()
+    })
+
+
+# MARGIN ANALYSIS
+
+
+df_mar <- df %>%
+    select(ticker, year, cap, rev, inc) %>%
+    mutate(mar = inc / rev,
+           lg_mar = log(mar)) %>%
+    na.omit() %>%
+    filter(is.finite(lg_mar))
+
+df_yr_cap <- df_mar %>%
+    group_by(year) %>%
+    summarize(cap = mean(cap)) %>%
+    arrange(-year)
+
+df_yr <- df_mar %>%
+    group_by(year) %>%
+    summarize(lg_mar_cap = mean(cap * lg_mar)) %>%
+    arrange(-year) %>%
+    left_join(df_yr_cap) %>%
+    mutate(lg_mar = lg_mar_cap / cap,
+           mar = exp(lg_mar))
+
+df_yr %>%
+    with({
+        pdf(here("margin.pdf"), 9, 6)
+        op <- par(mar = c(5.5, 5, 3.5, 2))
+
+        plot(year, mar, type = "n",
+             main = "Cap-Weighted Profit Margin of Current 100 Largest US Companies",
+             xlab = "", ylab = "Income-to-Revenue",
+             xaxt = "n")
+        axis(1, 2000:2030, las = 2)
+        abline(h = seq(0, 100, 2.5), v = 2000:2030, col = "lightblue")
+        lines(year, mar, lwd = 2)
+
+        par(op)
+        dev.off()
+    })
+
+
+# ROA ANALYSIS
+
+
+df_roa <- df %>%
+    select(ticker, year, cap, inc, ast) %>%
+    mutate(roa = inc / ast,
+           lg_roa = log(roa)) %>%
+    na.omit() %>%
+    filter(is.finite(lg_roa))
+
+df_yr_cap <- df_roa %>%
+    group_by(year) %>%
+    summarize(cap = mean(cap)) %>%
+    arrange(-year)
+
+df_yr <- df_roa %>%
+    group_by(year) %>%
+    summarize(lg_roa_cap = mean(cap * lg_roa)) %>%
+    arrange(-year) %>%
+    left_join(df_yr_cap) %>%
+    mutate(lg_roa = lg_roa_cap / cap,
+           roa = exp(lg_roa))
+
+df_yr %>%
+    with({
+        pdf(here("roa.pdf"), 9, 6)
+        op <- par(mar = c(5.5, 5, 3.5, 2))
+
+        plot(year, roa, type = "n",
+             main = "Cap-Weighted ROA of Current 100 Largest US Companies",
+             xlab = "", ylab = "Income-to-Assets",
+             xaxt = "n")
+        axis(1, 2000:2030, las = 2)
+        abline(h = seq(0, 100, 2.5), v = 2000:2030, col = "lightblue")
+        lines(year, roa, lwd = 2)
+
+        par(op)
+        dev.off()
+    })
+
+
+# ROE ANALYSIS
+
+
+df_roe <- df %>%
+    select(ticker, year, cap, inc, ast, lia) %>%
+    mutate(eqt = ast - lia,
+           roe = inc / eqt,
+           lg_roe = log(roe)) %>%
+    na.omit() %>%
+    filter(is.finite(lg_roe))
+
+df_yr_cap <- df_roe %>%
+    group_by(year) %>%
+    summarize(cap = mean(cap)) %>%
+    arrange(-year)
+
+df_yr <- df_roe %>%
+    group_by(year) %>%
+    summarize(lg_roe_cap = mean(cap * lg_roe)) %>%
+    arrange(-year) %>%
+    left_join(df_yr_cap) %>%
+    mutate(lg_roe = lg_roe_cap / cap,
+           roe = exp(lg_roe))
+
+df_yr %>%
+    with({
+        pdf(here("roe.pdf"), 9, 6)
+        op <- par(mar = c(5.5, 5, 3.5, 2))
+
+        plot(year, roe, type = "n",
+             main = "Cap-Weighted ROE of Current 100 Largest US Companies",
+             xlab = "", ylab = "Income-to-Equity",
+             xaxt = "n")
+        axis(1, 2000:2030, las = 2)
+        abline(h = seq(0, 100, 2.5), v = 2000:2030, col = "lightblue")
+        lines(year, roe, lwd = 2)
+
+        par(op)
+        dev.off()
+    })
+
+
+# P/EV ANALYSIS
+
+
+df_pev <- df %>%
+    select(ticker, year, cap, dbt, csh) %>%
+    mutate(ev = cap + dbt - csh,
+           pev = cap / ev,
+           lg_pev = log(pev)) %>%
+    na.omit() %>%
+    filter(is.finite(lg_pev))
+
+df_yr_cap <- df_pev %>%
+    group_by(year) %>%
+    summarize(cap = mean(cap)) %>%
+    arrange(-year)
+
+df_yr <- df_pev %>%
+    group_by(year) %>%
+    summarize(lg_pev_cap = mean(cap * lg_pev)) %>%
+    arrange(-year) %>%
+    left_join(df_yr_cap) %>%
+    mutate(lg_pev = lg_pev_cap / cap,
+           pev = exp(lg_pev))
+
+df_yr %>%
+    with({
+        pdf(here("pev_ratio.pdf"), 9, 6)
+        op <- par(mar = c(5.5, 5, 3.5, 2))
+
+        plot(year, pev, type = "n",
+             main = "Cap-Weighted P/EV of Current 100 Largest US Companies",
+             xlab = "", ylab = "Price-to-Enterprise Value",
+             xaxt = "n")
+        axis(1, 2000:2030, las = 2)
+        abline(h = seq(0, 1, 0.05), v = 2000:2030, col = "lightblue")
+        lines(year, pev, lwd = 2)
+
+        par(op)
+        dev.off()
+    })
+
+
+# E/D ANALYSIS
+
+
+df_ed <- df %>%
+    select(ticker, year, cap, inc, dbt) %>%
+    mutate(ed = inc / dbt,
+           lg_ed = log(ed)) %>%
+    na.omit() %>%
+    filter(is.finite(lg_ed))
+
+df_yr_cap <- df_ed %>%
+    group_by(year) %>%
+    summarize(cap = mean(cap)) %>%
+    arrange(-year)
+
+df_yr <- df_ed %>%
+    group_by(year) %>%
+    summarize(lg_ed_cap = mean(cap * lg_ed)) %>%
+    arrange(-year) %>%
+    left_join(df_yr_cap) %>%
+    mutate(lg_ed = lg_ed_cap / cap,
+           ed = exp(lg_ed))
+
+df_yr %>%
+    with({
+        pdf(here("ed_ratio.pdf"), 9, 6)
+        op <- par(mar = c(5.5, 5, 3.5, 2))
+
+        plot(year, ed, type = "n",
+             main = "Cap-Weighted E/D of Current 100 Largest US Companies",
+             xlab = "", ylab = "Income-to-Debt",
+             xaxt = "n")
+        axis(1, 2000:2030, las = 2)
+        abline(h = seq(0, 1, 0.05), v = 2000:2030, col = "lightblue")
+        lines(year, ed, lwd = 2)
+
+        par(op)
+        dev.off()
+    })
+
+
+# S/D ANALYSIS
+
+
+df_sd <- df %>%
+    select(ticker, year, cap, rev, dbt) %>%
+    mutate(sd = rev / dbt,
+           lg_sd = log(sd)) %>%
+    na.omit() %>%
+    filter(is.finite(lg_sd))
+
+df_yr_cap <- df_sd %>%
+    group_by(year) %>%
+    summarize(cap = mean(cap)) %>%
+    arrange(-year)
+
+df_yr <- df_sd %>%
+    group_by(year) %>%
+    summarize(lg_sd_cap = mean(cap * lg_sd)) %>%
+    arrange(-year) %>%
+    left_join(df_yr_cap) %>%
+    mutate(lg_sd = lg_sd_cap / cap,
+           sd = exp(lg_sd))
+
+df_yr %>%
+    with({
+        pdf(here("sd_ratio.pdf"), 9, 6)
+        op <- par(mar = c(5.5, 5, 3.5, 2))
+
+        plot(year, sd, type = "n",
+             main = "Cap-Weighted S/D of Current 100 Largest US Companies",
+             xlab = "", ylab = "Revenue-to-Debt",
+             xaxt = "n")
+        axis(1, 2000:2030, las = 2)
+        abline(h = seq(0, 1, 0.05), v = 2000:2030, col = "lightblue")
+        lines(year, sd, lwd = 2)
+
+        par(op)
+        dev.off()
+    })
+
+
+# ULTIMATE ANALYSIS
+
+
+df_ult <- df %>%
+    mutate(ult = (log(cap / rev) + log(cap / inc) + log(cap / inc) + log(cap / csh) + log(lia / rev) + log(lia / inc) + log(lia / inc) + log(lia / csh) + log(dbt / rev) + log(dbt / inc) + log(dbt / inc) + log(dbt / csh)) / 12,
+           lg_ult = ult) %>%
+    na.omit() %>%
+    filter(is.finite(lg_ult))
+
+df_yr_cap <- df_ult %>%
+    group_by(year) %>%
+    summarize(cap = mean(cap)) %>%
+    arrange(-year)
+
+df_yr <- df_ult %>%
+    group_by(year) %>%
+    summarize(lg_ult_cap = mean(cap * lg_ult)) %>%
+    arrange(-year) %>%
+    left_join(df_yr_cap) %>%
+    mutate(lg_ult = lg_ult_cap / cap,
+           ult = exp(lg_ult))
+
+df_yr %>%
+    with({
+        pdf(here("ult_ratio.pdf"), 9, 6)
+        op <- par(mar = c(5.5, 5, 3.5, 2))
+
+        plot(year, ult, type = "n",
+             main = "Cap-Weighted ??? of Current 100 Largest US Companies",
+             xlab = "", ylab = "???",
+             xaxt = "n")
+        axis(1, 2000:2030, las = 2)
+        abline(h = seq(0, 1, 0.05), v = 2000:2030, col = "lightblue")
+        lines(year, ult, lwd = 2)
 
         par(op)
         dev.off()
