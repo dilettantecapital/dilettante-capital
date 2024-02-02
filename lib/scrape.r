@@ -57,3 +57,5 @@ yahoo <- function(symbol, interval = "1d", events = "history", date0 = "1900-01-
         cbind(df) %>%
         dplyr::as_tibble()
 }
+
+
