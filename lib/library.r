@@ -3,6 +3,7 @@ suppressPackageStartupMessages({
     library(survival)
     library(fitdistrplus)
     library(lubridate)
+    library(rvest)
     library(httr)
     library(tibble)
     library(tidyr)
@@ -26,13 +27,17 @@ na_omit <- function(x) {
 # STRINGS
 
 
-clean_names <- function(x) {
-    names(x) <- names(x) %>%
+clean_names_vec <- function(x) {
+    x %>%
         gsub("[^0-9A-Za-z]+", "_", .) %>%
         trimws("both", "_") %>%
         gsub("^(\\d)", "x\\1", .) %>%
         tolower()
+}
 
+clean_names <- function(x) {
+    names(x) <- names(x) %>%
+        clean_names_vec()
     x
 }
 
