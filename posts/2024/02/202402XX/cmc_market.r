@@ -11,6 +11,15 @@ df <- here("cmc_full.csv") %>%
 # FILTERING
 
 
+df_mini <- df %>%
+    filter(year < 2024) %>%
+    select(ticker, year, cap, inc) %>%
+    group_by(ticker) %>%
+    mutate(len = length(ticker),
+           na = sum(is.na(c(cap, inc)))) %>%
+    filter(na == 0) %>%
+    ungroup()
+
 df_filt <- df %>%
     filter(year < 2023) %>%
     group_by(ticker) %>%
@@ -25,6 +34,11 @@ df_filt %>%
     sort() %>%
     cat(., "\n", sep = ", ")
 
+df_mini %>%
+    pull(ticker) %>%
+    unique() %>%
+    length()
+
 
 # TRANSFORMATION
 
@@ -33,6 +47,15 @@ df_yr <- df_filt %>%
     select(-ticker) %>%
     group_by(year) %>%
     summarize_all(mean) %>%
+    arrange(-year)
+
+df_yr <- df_mini %>%
+    select(-ticker, -len, -na) %>%
+    group_by(year) %>%
+    summarize(cap_w = weighted.mean(cap, cap),
+              val_w = weighted.mean(inc, cap),
+              val = mean(inc),
+              cap = mean(cap)) %>%
     arrange(-year)
 
 
@@ -54,6 +77,44 @@ df_yr <- df_filt %>%
 
 # PLOTTING
 
+
+df_yr %>%
+    with({
+        pdf(here("market_pe.pdf"), 9, 6)
+        op <- par(mar = c(5.5, 5, 3.5, 2))
+
+        years <- 2000:2030
+
+        ratio <- cap / val
+        ratio_w <- cap_w / val_w
+
+        plot(year, ratio, type = "n",
+             main = "Market P/E (Equal-Weighted)",
+             xlab = "", ylab = "Price-to-Income",
+             xaxt = "n")
+        axis(1, years, las = 2)
+        abline(h = seq(0, 30, 2.5), v = years, col = "lightblue")
+        lines(year, ratio, lwd = 2)
+
+        plot(year, ratio_w, type = "n",
+             main = "Market P/E (Capitalization-Weighted)",
+             xlab = "", ylab = "Price-to-Income",
+             xaxt = "n")
+        axis(1, years, las = 2)
+        abline(h = seq(0, 30, 2.5), v = years, col = "lightblue")
+        lines(year, ratio_w, lwd = 2)
+
+        plot(year, ratio_w / ratio, type = "n",
+             main = "P/E Weight Spread",
+             xlab = "", ylab = "Cap-to-Equal Weight Spread",
+             xaxt = "n")
+        axis(1, years, las = 2)
+        abline(h = seq(0, 30, 0.1), v = years, col = "lightblue")
+        lines(year, ratio_w / ratio, lwd = 2)
+
+        par(op)
+        dev.off()
+    })
 
 df_yr %>%
     with({
