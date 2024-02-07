@@ -125,3 +125,109 @@ df %>%
     select(-year, -cap, -rev, -inc, -ast, -lia, -dbt, -csh) %>%
     arrange(ratio) %>%
     print(n = 100)
+
+
+# RANKING
+
+
+df_cap <- df %>%
+    select(year, ticker, cap) %>%
+    na.omit()
+
+df_cap_yr <- df_cap %>%
+    group_by(year) %>%
+    summarize(total = sum(cap))
+
+df_rank <- df_cap %>%
+    arrange(-cap) %>%
+    group_by(year) %>%
+    mutate(rank = 100 - 100 * (1:n()) / n()) %>%
+    ungroup() %>%
+    arrange(-year, -rank)
+
+df_rank %>%
+    filter(ticker == "DHR") %>%
+    left_join(df_cap_yr) %>%
+    with({
+        pdf(here("cap_rank.pdf"), 9, 6)
+
+        plot(year, cap, type = "l", log = "y",
+             main = ticker[1])
+        plot(year, rank, type = "l",
+             main = ticker[1])
+        plot(year, cap / total, type = "l",
+             main = ticker[1])
+
+        dev.off()
+    })
+
+df_pct %>%
+    filter(ticker == "DHR") %>%
+    print(n = 30)
+
+df_pct <- df_rank %>%
+    left_join(df_cap_yr) %>%
+    mutate(pct = 100 * cap / total)
+
+mat <- df_pct %>%
+    select(ticker, year, pct) %>%
+    pivot_wider(names_from = "year", values_from = "pct") %>%
+    tibble::column_to_rownames("ticker")
+
+mat[is.na(mat)] <- 0
+
+dend <- mat %>%
+    dist() %>%
+    hclust("ward.D2") %>%
+    as.dendrogram()
+
+{
+    pdf(here("dend.pdf"), 6, 18)
+    op <- par(mar = c(0, 0, 0, 4))
+
+    plot(dend, horiz = TRUE)
+
+    par(op)
+    dev.off()
+}
+
+
+# NORMALIZED CHANGE
+
+
+df_norm <- df_cap %>%
+    mutate(change = log(cap / lead(cap))) %>%
+    group_by(year) %>%
+    mutate(norm = (change - mean(change, na.rm = TRUE)) / sd(change, na.rm = TRUE)) %>%
+    group_by(ticker) %>%
+    mutate(cum = Reduce("+", norm, right = TRUE, accumulate = TRUE))
+
+df_norm %>%
+    filter(ticker == "UPS") %>%
+    with({
+        pdf(here("cap_norm.pdf"), 9, 6)
+        plot(year, cum, type = "l", main = ticker[1])
+        dev.off()
+    })
+
+mat <- df_norm %>%
+    select(ticker, year, cum) %>%
+    pivot_wider(names_from = "year", values_from = "cum") %>%
+    tibble::column_to_rownames("ticker")
+
+mat[is.na(mat)] <- 0
+
+dend <- mat %>%
+    dist() %>%
+    hclust("ward.D2") %>%
+    as.dendrogram()
+
+{
+    pdf(here("dend.pdf"), 6, 18)
+    op <- par(mar = c(0, 0, 0, 4))
+
+    plot(dend, horiz = TRUE)
+
+    par(op)
+    dev.off()
+}
