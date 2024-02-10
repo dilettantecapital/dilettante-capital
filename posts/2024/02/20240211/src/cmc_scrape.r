@@ -10,6 +10,15 @@ clean_text <- function(x) {
         trimws()
 }
 
+parse_number <- function(x) {
+    x %>%
+        gsub("[^0-9.TBM]", "", .) %>%
+        gsub("T$", "e12", .) %>%
+        gsub("B$", "e9", .) %>%
+        gsub("M$", "e6", .) %>%
+        as.numeric(.)
+}
+
 parse_info_box <- function(div) {
     div %>%
         html_nodes("div[class^='line']") %>%
@@ -25,7 +34,13 @@ parse_table <- function(html) {
         clean_text()
 
     tab <- html %>%
-        html_node("table") %>%
+        html_node("table")
+
+    if (is.na(tab)) {
+        return(NULL)
+    }
+
+    tab <- tab %>%
         html_table() %>%
         setNames(c("year", "item", "change"))
 
@@ -41,18 +56,22 @@ parse_table <- function(html) {
 root <- "https://companiesmarketcap.com"
 url <- "https://companiesmarketcap.com/usa/largest-companies-in-the-usa-by-market-cap"
 
-links <- url %>%
-    read_html() %>%
-    html_nodes("a[href$='/marketcap/']")
+urls <- paste0("https://companiesmarketcap.com/usa/largest-companies-in-the-usa-by-market-cap/?page=", 1:5)
 
-href <- links %>%
-    html_attr("href") %>%
+ary <- urls %>%
+    lapply(read_html) %>%
+    lapply(html_nodes, "a[href$='/marketcap/']")
+
+ticker <- ary %>%
+    lapply(html_node, "div.company-code") %>%
+    lapply(html_text) %>%
+    unlist()
+
+href <- ary %>%
+    lapply(html_attr, "href") %>%
+    unlist() %>%
     paste0(root, .) %>%
     gsub("marketcap/", "", .)
-
-ticker <- links %>%
-    html_node("div.company-code") %>%
-    html_text()
 
 df <- data.frame(ticker, href)
 
@@ -127,7 +146,7 @@ htmls_csh <- df %>%
 # PARSING
 
 
-df_info <- htmls_cap %>%
+ary <- htmls_cap %>%
     lapply(function(html) {
         name <- html %>%
             html_node("div.company-name") %>%
@@ -146,8 +165,13 @@ df_info <- htmls_cap %>%
 
         data.frame(ticker, key = clean_names_vec(mat[,2]), val = mat[,1]) %>%
             pivot_wider(names_from = "key", values_from = "val")
-    }) %>%
-    do.call(rbind, .)
+    })
+
+df_info <- ary[sapply(ary, ncol) == 7] %>%
+    do.call(rbind, .) %>%
+    mutate(categories = NA) %>%
+    rbind(do.call(rbind, ary[sapply(ary, ncol) == 8])) %>%
+    arrange(parse_number(rank))
 
 df_info
 
@@ -176,7 +200,7 @@ df_dbt_raw <- htmls_dbt %>%
     do.call(rbind, .)
 
 df_csh_raw <- htmls_csh %>%
-    "["(df_info$ticker != "SCHW") %>%
+    "["(!(df_info$ticker %in% c("SCHW"))) %>%
     lapply(function(html) {
         ticker <- html %>%
             html_node("div.company-code") %>%
@@ -196,55 +220,58 @@ df_csh_raw <- htmls_csh %>%
 format_item <- function(df) {
     df %>%
         mutate(year = as.integer(substr(year, 1, 4)),
-               item = gsub("\\$", "", item),
-               item = gsub(" T", "e12", item),
-               item = gsub(" B", "e9", item),
-               item = gsub(" M", "e6", item),
-               item = as.numeric(item))
+               item = parse_number(item))
 }
 
 df_cap <- df_cap_raw %>%
     format_item() %>%
-    rename(cap = item)
+    rename(cap = item) %>%
+    filter(!duplicated(paste(ticker, year)))
 
 df_rev <- df_rev_raw %>%
     format_item() %>%
-    rename(rev = item)
+    rename(rev = item) %>%
+    filter(!duplicated(paste(ticker, year)))
 
 df_inc <- df_inc_raw %>%
     format_item() %>%
-    rename(inc = item)
+    rename(inc = item) %>%
+    filter(!duplicated(paste(ticker, year)))
 
 df_ast <- df_ast_raw %>%
     format_item() %>%
-    rename(ast = item)
+    rename(ast = item) %>%
+    filter(!duplicated(paste(ticker, year)))
 
 df_lia <- df_lia_raw %>%
     format_item() %>%
-    rename(lia = item)
+    rename(lia = item) %>%
+    filter(!duplicated(paste(ticker, year)))
 
 df_dbt <- df_dbt_raw %>%
     format_item() %>%
-    rename(dbt = item)
+    rename(dbt = item) %>%
+    filter(!duplicated(paste(ticker, year)))
 
 df_csh <- df_csh_raw %>%
     format_item() %>%
-    rename(csh = item)
+    rename(csh = item) %>%
+    filter(!duplicated(paste(ticker, year)))
 
 df_full <- df_cap %>%
-    left_join(df_rev) %>%
-    left_join(df_inc) %>%
-    left_join(df_ast) %>%
-    left_join(df_lia) %>%
-    left_join(df_dbt) %>%
-    left_join(df_csh)
+    left_join(df_rev, c("ticker", "year")) %>%
+    left_join(df_inc, c("ticker", "year")) %>%
+    left_join(df_ast, c("ticker", "year")) %>%
+    left_join(df_lia, c("ticker", "year")) %>%
+    left_join(df_dbt, c("ticker", "year")) %>%
+    left_join(df_csh, c("ticker", "year"))
 
 
 # EXPORTING
 
 
 df_info %>%
-    write_csv(here("cmc_info.csv"))
+    write_csv(here("../data/csv/cmc_info.csv"))
 
 df_full %>%
-    write_csv(here("cmc_full.csv"))
+    write_csv(here("../data/csv/cmc_full.csv"))

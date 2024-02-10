@@ -1,101 +1,501 @@
 ticker,rank,marketcap,country,share_price,change_1_day,change_1_year,categories
-MSFT,#1,$3.000 T,USA,$403.78,1.56%,59.75%,Software Tech Video games Dow jones AI
-AAPL,#2,$2.889 T,USA,$186.86,1.33%,28.49%,Software Tech Electronics Dow jones Tech Hardware
-GOOG,#4,$1.763 T,USA,$142.71,0.64%,40.70%,Software Internet Tech Autonomous driving AI
-AMZN,#5,$1.645 T,USA,$159.28,2.63%,51.48%,E-Commerce Retail Internet Tech
-NVDA,#6,$1.556 T,USA,$630.27,2.44%,200.95%,Semiconductors Tech Electronics Tech Hardware Autonomous driving AI
-META,#7,$1.014 T,USA,$394.78,1.19%,157.82%,Internet Tech AI
-BRK-B,#8,$838.13 B,USA,$386.44,0.70%,24.43%,Investment
-LLY,#9,$626.95 B,USA,$660.43,2.30%,92.79%,Pharmaceuticals Biotech
-TSLA,#10,$601.47 B,USA,$188.86,0.84%,4.11%,Automakers Tech Electric Vehicles  Bitcoin  Manufacturing EV charging Autonomous driving AI
-V,#12,$569.08 B,USA,$277.05,1.39%,19.99%,Financial services Dow jones
-AVGO,#13,$561.77 B,USA,"$1,200",1.70%,99.09%,Semiconductors Tech
-JPM,#15,$499.76 B,USA,$173.73,-0.36%,24.46%,Banks Financial services Dow jones
-UNH,#16,$469.06 B,USA,$507.14,-0.90%,2.04%,Healthcare Insurance Dow jones
-WMT,#17,$453.12 B,USA,$168.31,1.85%,16.34%,Retail Dow jones  Supermarket Chains
-MA,#18,$430.65 B,USA,$460.92,2.60%,23.21%,Financial services
-XOM,#20,$409.22 B,USA,$102.39,-0.41%,-10.76%,Oil&Gas  Energy
-JNJ,#21,$381.21 B,USA,$158.36,-0.34%,-3.98%,Pharmaceuticals Dow jones Biotech
-PG,#22,$374.55 B,USA,$159.18,1.30%,11.17%,Consumer goods Dow jones
-HD,#24,$358.36 B,USA,$360.07,2.01%,9.75%,Retail Dow jones
-MRK,#27,$320.24 B,USA,$126.38,4.64%,18.13%,Pharmaceuticals Dow jones Biotech
-ORCL,#28,$317.58 B,USA,$115.53,3.43%,28.30%,Software Tech
-COST,#29,$312.59 B,USA,$704.48,1.53%,36.02%,Retail  Supermarket Chains
-ABBV,#31,$295.88 B,USA,$167.59,1.94%,14.32%,Pharmaceuticals Biotech
-ADBE,#32,$283.81 B,USA,$627.91,1.64%,63.55%,Software Tech
-CVX,#34,$279.17 B,USA,$147.89,0.31%,-13.70%,Oil&Gas Dow jones  Energy
-AMD,#35,$275.45 B,USA,$170.48,1.66%,101.42%,Semiconductors Tech Electronics Tech Hardware
-CRM,#36,$274.71 B,USA,$283.80,0.96%,65.17%,Software Tech Dow jones
-BAC,#38,$264.89 B,USA,$33.55,-1.35%,-6.60%,Banks Financial services
-KO,#39,$263.64 B,USA,$60.98,2.50%,-0.57%,Beverages Dow jones
-NFLX,#41,$245.59 B,USA,$567.51,0.60%,56.78%,Internet Tech Entertainment
-PEP,#44,$236.06 B,USA,$171.70,1.88%,0.08%,Beverages
-MCD,#49,$216.20 B,USA,$298.08,1.83%,11.95%,Restaurant chains Food Dow jones
-TMO,#51,$213.36 B,USA,$552.23,2.46%,-5.98%,Diagnostics and Testing Biotech Scientific & Technical Instruments
-CSCO,#55,$203.90 B,USA,$50.18,0.00%,3.31%,Tech Electronics Networking hardware Dow jones  Telecommunications equipment Tech Hardware
-ABT,#56,$198.76 B,USA,$114.49,1.18%,2.39%,Medical devices
-TMUS,#59,$194.31 B,USA,$162.50,0.79%,7.64%,Telecommunication
-CMCSA,#62,$185.60 B,USA,$46.73,0.41%,16.91%,Media/Press Telecommunication Entertainment
-INTC,#63,$183.32 B,USA,$43.36,0.65%,49.16%,Semiconductors Tech Dow jones  Manufacturing Tech Hardware
-DHR,#65,$181.20 B,USA,$245.13,2.18%,3.36%,Conglomerate
-VZ,#66,$178.63 B,USA,$42.49,0.33%,1.92%,Telecommunication Dow jones
-DIS,#67,$178.03 B,USA,$97.06,1.05%,-11.27%,Entertainment Dow jones
-INTU,#68,$177.16 B,USA,$632.86,0.24%,45.30%,Software Tech
-WFC,#69,$175.37 B,USA,$48.73,-2.21%,2.96%,Banks Financial services
-AMGN,#70,$173.69 B,USA,$324.56,3.28%,31.72%,Pharmaceuticals Dow jones Biotech
-IBM,#71,$170.66 B,USA,$186.90,1.76%,38.35%,Software Tech Dow jones AI
-NOW,#74,$158.05 B,USA,$771.00,0.73%,62.72%,Software Internet Tech
-QCOM,#75,$157.47 B,USA,$141.11,-4.98%,1.91%,Semiconductors Tech Tech Hardware
-CAT,#78,$156.64 B,USA,$307.69,2.46%,23.30%,Dow jones Machinery manufacturing  Manufacturing
-NKE,#79,$154.17 B,USA,$101.76,0.23%,-21.42%,Clothing Sports goods Footwear Dow jones
-PFE,#80,$154.09 B,USA,$27.29,0.78%,-37.93%,Pharmaceuticals Biotech
-UNP,#82,$151.95 B,USA,$249.27,2.19%,19.88%,Railways Transportation Infrastructure
-GE,#85,$147.37 B,USA,$135.41,2.26%,64.49%,Conglomerate
-AXP,#87,$146.92 B,USA,$203.22,1.24%,17.06%,Financial services Dow jones
-TXN,#88,$145.15 B,USA,$159.69,-0.27%,-12.31%,Semiconductors Tech Tech Hardware
-SPGI,#89,$144.84 B,USA,$457.22,1.98%,21.22%,Financial services
-PM,#90,$144.82 B,USA,$93.29,2.69%,-11.48%,Tobacco
-MS,#93,$142.49 B,USA,$86.82,-0.48%,-11.58%,Banks Financial services Investment
-AMAT,#94,$138.92 B,USA,$166.97,1.63%,40.30%,Semiconductors Tech Tech Hardware
-UBER,#96,$137.32 B,USA,$66.73,2.24%,111.91%,Internet Tech Transportation Ridesharing
-ISRG,#97,$135.23 B,USA,$383.83,1.48%,52.80%,Medical devices
-RTX,#99,$132.53 B,USA,$92.17,1.15%,-6.35%,Aerospace Defense contractors
-COP,#101,$132.25 B,USA,$111.38,-0.44%,-5.37%,Oil&Gas  Energy
-HON,#102,$130.07 B,USA,$197.31,-2.45%,-4.55%,Aerospace Defense contractors Dow jones
-SYK,#103,$129.39 B,USA,$340.56,1.51%,22.09%,Medical devices
-T,#104,$128.98 B,USA,$18.04,1.98%,-10.60%,Telecommunication
-BA,#105,$128.01 B,USA,$209.81,-0.58%,-2.30%,Aircraft manufacturers Aerospace Dow jones  Manufacturing
-LOW,#107,$126.65 B,USA,$220.23,3.47%,3.12%,Retail
-GS,#110,$125.17 B,USA,$383.85,-0.04%,4.96%,Banks Financial services Dow jones
-BKNG,#112,$124.15 B,USA,"$3,558",1.45%,45.50%,Internet Tech Travel Online Travel
-PLD,#114,$123.56 B,USA,$130.44,2.96%,-0.35%,Real estate Investment  REITs
-NEE,#116,$122.58 B,USA,$59.75,1.91%,-19.52%,Electricity Utility companies Renewable energy  Energy
-UPS,#118,$121.32 B,USA,$142.41,0.36%,-23.01%,Courier Transportation
-BLK,#120,$116.56 B,USA,$784.93,1.37%,2.92%,Investment
-ELV,#121,$116.40 B,USA,$495.43,0.40%,-0.67%,Healthcare Insurance
-SCHW,#125,$113.49 B,USA,$62.27,-1.03%,-20.42%,Banks Financial services
-VRTX,#127,$111.80 B,USA,$433.87,0.11%,36.75%,Pharmaceuticals Biotech
-TJX,#128,$110.61 B,USA,$97.06,2.27%,17.76%,Clothing Retail
-DE,#130,$110.22 B,USA,$393.68,0.03%,-7.80%,Machinery manufacturing  Manufacturing
-LRCX,#131,$109.10 B,USA,$832.21,0.85%,56.94%,Semiconductors Tech Tech Hardware
-PANW,#133,$107.19 B,USA,$339.97,0.43%,112.85%,Software Tech Networking hardware IT security
-C,#135,$106.68 B,USA,$56.06,-0.20%,7.50%,Banks Financial services
-SBUX,#136,$105.71 B,USA,$93.37,0.37%,-15.11%,Beverages
-PGR,#139,$104.59 B,USA,$178.71,0.26%,29.52%,Insurance
-REGN,#141,$104.34 B,USA,$957.78,1.59%,26.36%,Pharmaceuticals Biotech
-MDLZ,#142,$104.16 B,USA,$76.54,1.69%,14.70%,Food
-LMT,#143,$103.85 B,USA,$429.77,0.08%,-7.03%,Aircraft manufacturers Aerospace Defense contractors  Manufacturing
-ADP,#145,$101.47 B,USA,$247.08,0.53%,8.98%,Professional services Software Tech IT services
-BMY,#147,$99.03 B,USA,$48.67,-0.41%,-31.67%,Pharmaceuticals Biotech
-GILD,#150,$97.39 B,USA,$78.16,-0.13%,-6.95%,Pharmaceuticals Biotech
-MMC,#154,$95.32 B,USA,$193.74,-0.05%,10.42%,Insurance Professional services
-ADI,#155,$95.21 B,USA,$192.01,-0.18%,8.73%,Semiconductors Tech  Manufacturing
-CVS,#156,$95.12 B,USA,$73.92,-0.61%,-15.51%,Pharmaceuticals Healthcare Retail  Drugstore
-BSX,#157,$94.96 B,USA,$64.82,2.47%,36.35%,Medical devices
-MU,#159,$94.50 B,USA,$85.61,-0.16%,36.76%,Semiconductors Tech Tech Hardware
-ABNB,#160,$93.88 B,USA,$146.49,1.63%,28.51%,Internet Tech Travel Online Travel
-AMT,#161,$92.48 B,USA,$198.39,1.40%,-12.66%,Real estate Telecommunication  REITs Infrastructure
-CI,#167,$89.92 B,USA,$307.32,2.12%,-1.90%,Healthcare Insurance
-BX,#170,$89.74 B,USA,$124.30,-0.12%,27.87%,Investment
-ZTS,#176,$86.83 B,USA,$189.14,0.71%,12.71%,Pharmaceuticals Biotech
-FI,#177,$86.39 B,USA,$143.94,1.46%,33.08%,Financial services Tech
+MSFT,#1,$3.124 T,USA,$420.55,1.56%,59.53%,Software Tech Video games Dow jones AI
+AAPL,#2,$2.916 T,USA,$188.85,0.41%,25.17%,Software Tech Electronics Dow jones Tech Hardware
+GOOG,#4,$1.858 T,USA,$150.22,2.04%,57.36%,Software Internet Tech Autonomous driving AI
+AMZN,#5,$1.812 T,USA,$174.45,2.71%,77.58%,E-Commerce Retail Internet Tech
+NVDA,#6,$1.781 T,USA,$721.33,3.58%,222.93%,Semiconductors Tech Electronics Tech Hardware Autonomous driving AI
+META,#7,$1.193 T,USA,$468.11,-0.40%,163.10%,Internet Tech AI
+BRK-B,#8,$863.28 B,USA,$398.36,0.22%,29.67%,Investment
+LLY,#9,$702.63 B,USA,$740.16,0.61%,116.55%,Pharmaceuticals Biotech
+TSLA,#11,$616.47 B,USA,$193.57,2.12%,-6.63%,Automakers Tech Electric Vehicles  Bitcoin  Manufacturing EV charging Autonomous driving AI
+AVGO,#12,$600.83 B,USA,"$1,283",0.68%,114.12%,Semiconductors Tech
+V,#13,$567.80 B,USA,$276.43,0.24%,20.53%,Financial services Dow jones
+JPM,#15,$503.45 B,USA,$175.01,0.12%,24.63%,Banks Financial services Dow jones
+UNH,#16,$479.31 B,USA,$518.22,-0.36%,6.69%,Healthcare Insurance Dow jones
+WMT,#17,$455.74 B,USA,$169.28,-0.05%,19.62%,Retail Dow jones  Supermarket Chains
+MA,#19,$427.81 B,USA,$457.88,-0.08%,23.61%,Financial services
+XOM,#20,$404.12 B,USA,$101.77,-2.12%,-11.00%,Oil&Gas  Energy
+JNJ,#21,$377.36 B,USA,$156.76,0.23%,-2.87%,Pharmaceuticals Dow jones Biotech
+PG,#24,$370.41 B,USA,$157.42,-0.77%,14.86%,Consumer goods Dow jones
+HD,#25,$361.42 B,USA,$363.15,-0.16%,15.08%,Retail Dow jones
+COST,#27,$320.99 B,USA,$723.40,-0.10%,44.50%,Retail  Supermarket Chains
+ORCL,#28,$320.63 B,USA,$116.64,-0.03%,34.61%,Software Tech
+MRK,#29,$317.89 B,USA,$125.45,-0.92%,17.55%,Pharmaceuticals Dow jones Biotech
+ABBV,#30,$307.34 B,USA,$174.08,-0.41%,17.07%,Pharmaceuticals Biotech
+ADBE,#34,$283.49 B,USA,$627.21,1.84%,66.90%,Software Tech
+CRM,#35,$281.97 B,USA,$291.30,-0.22%,67.74%,Software Tech Dow jones
+CVX,#36,$279.57 B,USA,$151.04,-1.96%,-10.33%,Oil&Gas Dow jones  Energy
+AMD,#37,$278.69 B,USA,$172.48,1.85%,107.28%,Semiconductors Tech Electronics Tech Hardware
+BAC,#38,$261.10 B,USA,$33.07,-0.15%,-7.42%,Banks Financial services
+KO,#39,$257.50 B,USA,$59.56,-0.45%,-0.10%,Beverages Dow jones
+NFLX,#41,$242.91 B,USA,$561.32,0.50%,54.85%,Internet Tech Entertainment
+PEP,#47,$230.52 B,USA,$167.67,-3.55%,-2.96%,Beverages
+TMO,#48,$212.79 B,USA,$550.75,-0.03%,-3.20%,Diagnostics and Testing Biotech Scientific & Technical Instruments
+MCD,#50,$209.03 B,USA,$289.47,-0.84%,11.05%,Restaurant chains Food Dow jones
+CSCO,#54,$203.70 B,USA,$50.13,0.36%,7.28%,Tech Electronics Networking hardware Dow jones  Telecommunications equipment Tech Hardware
+DIS,#58,$198.81 B,USA,$108.39,-1.94%,-1.79%,Entertainment Dow jones
+ABT,#59,$194.10 B,USA,$111.81,-0.55%,3.46%,Medical devices
+TMUS,#60,$192.49 B,USA,$162.19,0.78%,13.54%,Telecommunication
+INTU,#63,$184.24 B,USA,$658.16,0.78%,56.80%,Software Tech
+INTC,#64,$183.11 B,USA,$43.31,1.91%,56.18%,Semiconductors Tech Dow jones  Manufacturing Tech Hardware
+DHR,#67,$179.58 B,USA,$242.95,-1.19%,7.42%,Conglomerate
+WFC,#68,$172.96 B,USA,$48.06,-0.60%,1.03%,Banks Financial services
+IBM,#69,$170.15 B,USA,$186.34,1.07%,39.32%,Software Tech Dow jones AI
+QCOM,#71,$168.51 B,USA,$151.00,1.90%,15.68%,Semiconductors Tech Tech Hardware
+CMCSA,#72,$167.09 B,USA,$42.07,1.99%,11.00%,Media/Press Telecommunication Entertainment
+VZ,#73,$166.98 B,USA,$39.72,-0.48%,-0.23%,Telecommunication Dow jones
+NOW,#74,$166.65 B,USA,$812.94,1.69%,75.47%,Software Internet Tech
+CAT,#75,$161.46 B,USA,$317.16,-1.50%,28.78%,Dow jones Machinery manufacturing  Manufacturing
+NKE,#76,$158.33 B,USA,$104.50,0.70%,-14.47%,Clothing Sports goods Footwear Dow jones
+AMGN,#78,$155.80 B,USA,$291.12,-1.27%,21.30%,Pharmaceuticals Dow jones Biotech
+PFE,#79,$155.61 B,USA,$27.56,-0.04%,-36.41%,Pharmaceuticals Biotech
+AMAT,#80,$154.63 B,USA,$185.84,6.87%,60.10%,Semiconductors Tech Tech Hardware
+AXP,#81,$153.61 B,USA,$212.47,0.60%,18.45%,Financial services Dow jones
+UNP,#83,$152.06 B,USA,$249.45,0.25%,23.00%,Railways Transportation Infrastructure
+GE,#84,$151.58 B,USA,$139.28,0.17%,72.40%,Conglomerate
+TXN,#89,$147.66 B,USA,$162.40,1.37%,-7.19%,Semiconductors Tech Tech Hardware
+UBER,#90,$145.92 B,USA,$70.91,-0.98%,97.58%,Internet Tech Transportation Ridesharing
+MS,#91,$141.71 B,USA,$85.89,0.28%,-12.40%,Banks Financial services Investment
+PM,#94,$138.35 B,USA,$89.12,0.12%,-12.64%,Tobacco
+SPGI,#95,$137.54 B,USA,$437.89,0.29%,20.42%,Financial services
+ISRG,#97,$136.78 B,USA,$388.22,0.33%,58.99%,Medical devices
+BKNG,#100,$131.12 B,USA,"$3,758",-2.14%,54.27%,Internet Tech Travel Online Travel
+COP,#101,$130.95 B,USA,$111.16,-2.41%,1.12%,Oil&Gas  Energy
+SYK,#102,$129.92 B,USA,$341.96,0.86%,29.35%,Medical devices
+HON,#103,$128.44 B,USA,$194.84,0.71%,-2.20%,Aerospace Defense contractors Dow jones
+LOW,#106,$127.82 B,USA,$222.26,0.85%,6.53%,Retail
+BA,#107,$127.64 B,USA,$209.20,-0.01%,-1.32%,Aircraft manufacturers Aerospace Dow jones  Manufacturing
+PLD,#110,$125.50 B,USA,$132.48,0.62%,3.47%,Real estate Investment  REITs
+GS,#111,$125.31 B,USA,$384.26,-0.20%,4.42%,Banks Financial services Dow jones
+UPS,#112,$124.60 B,USA,$146.26,-1.12%,-20.83%,Courier Transportation
+T,#113,$120.40 B,USA,$16.84,0.12%,-11.23%,Telecommunication
+RTX,#114,$120.09 B,USA,$90.51,-0.58%,-7.50%,Aerospace Defense contractors
+LRCX,#115,$119.51 B,USA,$911.58,5.46%,76.83%,Semiconductors Tech Tech Hardware
+ELV,#116,$118.90 B,USA,$506.08,0.78%,4.22%,Healthcare Insurance
+PANW,#118,$118.83 B,USA,$376.90,2.69%,126.87%,Software Tech Networking hardware IT security
+BLK,#120,$118.38 B,USA,$797.21,0.51%,11.35%,Investment
+NEE,#125,$116.08 B,USA,$56.58,0.52%,-22.78%,Electricity Utility companies Renewable energy  Energy
+SCHW,#126,$115.49 B,USA,$63.37,1.44%,-20.37%,Banks Financial services
+TJX,#129,$112.54 B,USA,$98.75,0.40%,22.28%,Clothing Retail
+SBUX,#133,$110.16 B,USA,$97.30,0.74%,-8.25%,Beverages
+VRTX,#134,$108.97 B,USA,$422.91,-0.04%,45.03%,Pharmaceuticals Biotech
+PGR,#136,$106.94 B,USA,$182.72,-0.13%,33.20%,Insurance
+DE,#137,$106.75 B,USA,$381.29,-1.18%,-6.55%,Machinery manufacturing  Manufacturing
+REGN,#141,$104.64 B,USA,$953.42,0.74%,28.02%,Pharmaceuticals Biotech
+LMT,#143,$103.06 B,USA,$426.50,-0.12%,-9.27%,Aircraft manufacturers Aerospace Defense contractors  Manufacturing
+C,#144,$102.74 B,USA,$53.99,-0.55%,8.02%,Banks Financial services
+ADP,#145,$102.69 B,USA,$249.99,-0.43%,11.65%,Professional services Software Tech IT services
+BMY,#147,$101.35 B,USA,$49.81,2.26%,-30.33%,Pharmaceuticals Biotech
+MDLZ,#151,$98.52 B,USA,$73.17,-2.13%,13.81%,Food
+CI,#152,$97.96 B,USA,$334.93,0.79%,14.89%,Healthcare Insurance
+MMC,#154,$97.37 B,USA,$197.91,0.56%,15.46%,Insurance Professional services
+ADI,#155,$96.70 B,USA,$195.02,0.49%,9.24%,Semiconductors Tech  Manufacturing
+CVS,#159,$96.04 B,USA,$76.32,1.65%,-15.27%,Pharmaceuticals Healthcare Retail  Drugstore
+BSX,#160,$95.95 B,USA,$65.50,0.74%,39.18%,Medical devices
+ABNB,#163,$94.59 B,USA,$147.60,-1.96%,28.41%,Internet Tech Travel Online Travel
+MU,#164,$94.45 B,USA,$85.56,0.80%,42.17%,Semiconductors Tech Tech Hardware
+BX,#167,$92.18 B,USA,$127.68,-0.13%,38.98%,Investment
+GILD,#169,$91.79 B,USA,$73.67,-0.18%,-13.87%,Pharmaceuticals Biotech
+AMT,#172,$90.64 B,USA,$194.44,0.41%,-9.64%,Real estate Telecommunication  REITs Infrastructure
+ZTS,#173,$90.59 B,USA,$197.32,0.80%,22.70%,Pharmaceuticals Biotech
+KLAC,#177,$87.87 B,USA,$649.80,5.06%,60.95%,Semiconductors Tech Tech Hardware
+ANET,#178,$87.87 B,USA,$282.45,2.38%,106.89%,Tech Electronics Networking hardware Tech Hardware
+SNPS,#179,$87.74 B,USA,$575.30,0.81%,58.18%,Software Semiconductors Tech Electronics Tech Hardware
+FI,#180,$86.56 B,USA,$144.23,0.47%,23.80%,Financial services Tech
+KKR,#181,$86.25 B,USA,$97.03,0.50%,68.16%,Investment
+CDNS,#184,$84.86 B,USA,$311.94,1.49%,67.47%,Software Tech Electronics Tech Hardware
+HCA,#190,$81.98 B,USA,$306.32,0.28%,19.56%,Healthcare
+EQIX,#192,$80.34 B,USA,$855.76,0.05%,16.80%,Real estate Investment Internet Tech  REITs
+WDAY,#193,$80.18 B,USA,$304.89,2.09%,60.66%,Software Tech
+SHW,#196,$79.79 B,USA,$311.74,-0.13%,34.66%,Paint & Coating
+CRWD,#199,$79.08 B,USA,$329.34,1.95%,190.37%,Software Tech IT security
+ICE,#205,$77.58 B,USA,$135.49,1.02%,25.99%,Financial services Stock exchanges Stock/Crypto exchanges
+ITW,#208,$76.95 B,USA,$255.75,0.49%,8.83%,Tool manufacturers  Manufacturing
+SNOW,#209,$76.70 B,USA,$233.28,4.66%,43.40%,Software Tech
+WM,#212,$76.06 B,USA,$188.86,-0.33%,24.02%,Waste & Recycling
+MCO,#216,$74.14 B,USA,$405.17,1.80%,31.97%,Financial services
+GD,#217,$74.01 B,USA,$270.14,0.42%,18.14%,Defense contractors
+CME,#218,$73.83 B,USA,$205.09,0.53%,12.12%,Financial services Stock exchanges Stock/Crypto exchanges
+SO,#222,$72.97 B,USA,$66.91,-0.04%,1.72%,Oil&Gas Electricity Utility companies  Energy
+CSX,#223,$72.89 B,USA,$36.89,-0.49%,18.50%,Railways Transportation Infrastructure
+MAR,#225,$72.54 B,USA,$247.02,-1.03%,41.23%,Hotels Travel
+CMG,#227,$72.34 B,USA,"$2,638",0.68%,N/A,Restaurant chains Food
+MO,#238,$70.73 B,USA,$40.11,0.05%,-13.43%,Tobacco
+DUK,#239,$70.66 B,USA,$91.69,-1.04%,-6.01%,Oil&Gas Electricity Utility companies  Energy
+BDX,#240,$70.41 B,USA,$243.75,1.26%,-0.60%,Medical devices
+CL,#245,$68.71 B,USA,$83.46,-0.95%,14.60%,Consumer goods
+NOC,#248,$68.25 B,USA,$454.92,0.82%,0.24%,Aerospace Defense contractors
+TGT,#251,$67.64 B,USA,$146.53,-0.59%,-14.49%,Retail  Supermarket Chains
+SLB,#254,$67.18 B,USA,$47.08,-1.49%,-12.56%,Oil&Gas  Energy
+PH,#256,$66.95 B,USA,$521.38,1.14%,48.28%,NA
+MCK,#260,$65.70 B,USA,$501.35,1.44%,38.36%,Healthcare
+EOG,#265,$64.75 B,USA,$111.05,-1.78%,-12.67%,Oil&Gas  Energy
+APH,#270,$63.15 B,USA,$105.29,0.41%,31.09%,Electronics  Manufacturing
+PYPL,#271,$63.13 B,USA,$58.91,4.95%,-24.88%,Financial services Internet Tech  Bitcoin
+APO,#273,$62.69 B,USA,$109.93,2.35%,60.72%,Financial services Investment Asset Management
+CTAS,#275,$62.66 B,USA,$618.22,0.17%,41.12%,Clothing
+PSX,#276,$62.63 B,USA,$145.66,-0.79%,42.65%,Oil&Gas  Energy
+USB,#277,$62.60 B,USA,$40.18,-0.47%,-17.61%,Banks Financial services
+MPC,#278,$62.54 B,USA,$169.97,0.17%,40.77%,Oil&Gas  Energy
+TDG,#283,$62.25 B,USA,"$1,120",-0.77%,49.92%,Aerospace
+SCCO,#285,$61.97 B,USA,$80.16,-0.96%,7.66%,Mining
+DELL,#290,$60.88 B,USA,$86.20,1.65%,105.04%,Tech Electronics Tech Hardware
+FDX,#291,$60.62 B,USA,$242.62,0.36%,16.30%,Courier Transportation
+ORLY,#292,$60.59 B,USA,"$1,026",0.49%,25.56%,auto parts
+MRVL,#297,$59.50 B,USA,$68.83,-3.08%,52.58%,Semiconductors Tech  Manufacturing Tech Hardware
+PNC,#298,$59.35 B,USA,$147.77,-0.11%,-6.99%,Banks Financial services
+EMR,#301,$58.99 B,USA,$103.20,0.80%,21.20%,Engineering  Manufacturing
+ROP,#304,$58.77 B,USA,$550.26,0.90%,28.37%,Tech Scientific & Technical Instruments
+MNST,#309,$57.91 B,USA,$55.66,-1.47%,8.25%,Beverages
+ECL,#311,$57.80 B,USA,$202.72,-0.08%,39.07%,NA
+NSC,#312,$57.56 B,USA,$254.83,0.31%,6.63%,Railways Infrastructure
+ADSK,#314,$57.04 B,USA,$266.68,1.98%,18.71%,Software Tech
+EPD,#315,$56.96 B,USA,$26.23,-0.08%,1.67%,Oil&Gas  Energy
+PCAR,#323,$55.47 B,USA,$106.01,0.38%,45.20%,Manufacturing Specialty Vehicles
+SPG,#327,$55.07 B,USA,$146.93,1.96%,18.10%,Real estate Investment  REITs
+MSI,#329,$54.91 B,USA,$330.89,0.77%,28.68%,Telecommunications equipment
+RSG,#331,$54.58 B,USA,$173.49,-0.66%,38.31%,Waste & Recycling
+FTNT,#334,$54.09 B,USA,$70.44,3.82%,21.83%,Software Tech Networking hardware IT security
+FCX,#337,$53.57 B,USA,$37.36,-1.99%,-12.99%,Mining
+PXD,#340,$53.08 B,USA,$227.22,-1.96%,2.67%,Oil&Gas  Energy
+PLTR,#341,$53.05 B,USA,$24.38,-0.53%,206.67%,Software Tech AI
+AJG,#345,$51.75 B,USA,$238.84,0.76%,23.54%,Insurance
+EW,#346,$51.55 B,USA,$85.01,-0.92%,10.00%,Medical devices
+COF,#348,$51.41 B,USA,$135.17,0.29%,16.93%,Banks Financial services
+EL,#349,$51.38 B,USA,$143.34,1.83%,-43.23%,Consumer goods Cosmetics and Beauty
+MMM,#350,$51.34 B,USA,$92.90,-0.32%,-17.74%,Dow jones Gloves & PPE
+OXY,#354,$50.43 B,USA,$57.47,-1.00%,-9.07%,Oil&Gas  Energy
+F,#355,$50.38 B,USA,$12.68,-1.17%,-6.00%,Automakers  Manufacturing
+CARR,#356,$50.31 B,USA,$56.01,1.73%,24.69%,NA
+PSA,#358,$50.08 B,USA,$284.07,-0.29%,-4.84%,Real estate Investment  REITs
+MET,#360,$49.32 B,USA,$67.50,1.12%,-4.65%,Insurance
+ROST,#363,$49.10 B,USA,$145.87,-0.13%,26.82%,Clothing Retail
+TRV,#364,$48.94 B,USA,$214.50,0.32%,15.72%,Insurance Dow jones
+CPRT,#365,$48.88 B,USA,$50.91,-0.10%,47.10%,E-Commerce Internet Used car retailer Car retail
+APD,#366,$48.87 B,USA,$219.84,-0.03%,-23.37%,Chemicals
+VLO,#367,$48.70 B,USA,$143.06,0.89%,7.87%,Oil&Gas  Energy
+AIG,#368,$48.52 B,USA,$69.12,1.04%,13.55%,Insurance
+WELL,#369,$48.51 B,USA,$87.66,0.78%,18.48%,Real estate
+HLT,#370,$48.45 B,USA,$192.16,-1.23%,27.43%,Hotels Travel
+DHI,#372,$48.08 B,USA,$144.91,0.23%,48.31%,Construction
+TFC,#376,$47.80 B,USA,$35.84,0.93%,-25.22%,Banks Financial services
+GWW,#378,$47.59 B,USA,$959.01,1.15%,45.06%,NA
+IDXX,#381,$47.52 B,USA,$572.21,-0.24%,17.56%,Diagnostics and Testing
+DASH,#382,$47.51 B,USA,$119.31,0.85%,92.90%,Internet Tech Food  Food Delivery
+ODFL,#383,$47.50 B,USA,$435.33,0.04%,22.63%,Transportation
+CCI,#386,$47.01 B,USA,$108.40,0.84%,-23.12%,Real estate Investment Telecommunication  REITs Infrastructure
+ET,#388,$46.87 B,USA,$13.94,0.22%,9.25%,Oil&Gas  Energy
+MSCI,#389,$46.85 B,USA,$592.42,1.18%,6.63%,Financial services
+DXCM,#393,$46.42 B,USA,$120.47,-5.18%,12.34%,Medical devices Biotech
+AZO,#395,$46.34 B,USA,"$2,680",-1.89%,7.62%,Retail
+COR,#396,$46.33 B,USA,$230.69,0.16%,48.81%,Healthcare
+MCHP,#398,$46.17 B,USA,$85.44,1.29%,0.65%,Semiconductors Tech Tech Hardware
+NUE,#399,$45.85 B,USA,$186.54,0.13%,14.03%,Steel producers Steel industry
+DLR,#400,$45.53 B,USA,$147.19,0.09%,32.25%,Real estate Investment  REITs
+HUM,#401,$45.25 B,USA,$370.28,0.67%,-24.73%,Insurance
+AFL,#402,$45.25 B,USA,$78.23,0.15%,12.35%,NA
+GM,#405,$44.51 B,USA,$38.56,-0.23%,-7.37%,Automakers  Manufacturing
+STZ,#408,$44.34 B,USA,$242.55,-0.21%,6.91%,Alcoholic beverages Beverages
+DDOG,#409,$44.32 B,USA,$134.91,2.63%,61.76%,Software Internet Tech
+PAYX,#410,$44.26 B,USA,$123.03,0.23%,8.16%,Professional services
+KHC,#413,$44.11 B,USA,$35.97,-1.37%,-7.51%,Food
+O,#416,$43.89 B,USA,$52.76,-0.75%,-20.34%,Real estate Investment  REITs
+SRE,#417,$43.84 B,USA,$69.67,-0.24%,-8.79%,Oil&Gas Electricity  Energy Infrastructure
+URI,#419,$43.69 B,USA,$650.35,0.52%,44.52%,Rental & Leasing Services
+HES,#421,$43.63 B,USA,$142.07,-2.87%,1.02%,Oil&Gas  Energy
+KDP,#422,$43.55 B,USA,$31.15,-1.08%,-10.67%,Beverages
+SGEN,#426,$43.15 B,USA,$228.74,-0.07%,68.75%,Pharmaceuticals Biotech
+LEN,#430,$42.59 B,USA,$153.02,-0.18%,51.70%,Construction
+CHTR,#434,$42.28 B,USA,$291.15,3.03%,-26.06%,Telecommunication
+CEG,#435,$42.21 B,USA,$132.17,1.11%,56.56%,Electricity Utility companies  Energy
+ALL,#440,$42.00 B,USA,$160.03,-1.06%,19.82%,Insurance
+ARES,#444,$41.99 B,USA,$136.71,0.86%,63.96%,Financial services Asset Management
+BK,#445,$41.93 B,USA,$55.22,0.20%,7.08%,Banks Financial services
+SMCI,#451,$41.40 B,USA,$740.29,6.06%,750.91%,Tech Electronics Networking hardware Tech Hardware
+WMB,#452,$41.39 B,USA,$34.03,-0.03%,8.65%,Oil&Gas  Energy
+PCG,#453,$41.33 B,USA,$16.25,0.06%,5.11%,Oil&Gas Electricity  Energy
+CNC,#454,$41.33 B,USA,$77.33,1.08%,8.06%,Healthcare Insurance
+SQ,#455,$41.07 B,USA,$66.88,-2.83%,-12.21%,Financial services Tech  Bitcoin
+IBKR,#458,$40.87 B,USA,$98.06,2.82%,13.56%,Financial services Internet
+KMB,#464,$40.48 B,USA,$119.81,-0.38%,-6.58%,Consumer goods  Manufacturing
+LVS,#465,$40.40 B,USA,$53.62,0.02%,-6.78%,Hotels Gambling Entertainment Travel
+WCN,#466,$40.37 B,USA,$156.71,0.47%,17.23%,Waste & Recycling
+AEP,#469,$40.31 B,USA,$76.66,0.95%,-13.36%,Electricity  Energy
+OKE,#470,$40.21 B,USA,$69.04,0.10%,1.57%,Oil&Gas  Energy
+FAST,#471,$40.06 B,USA,$70.02,1.10%,34.24%,NA
+HSY,#472,$39.96 B,USA,$195.45,-3.39%,-16.88%,Food
+IQV,#474,$39.82 B,USA,$218.20,0.55%,-5.26%,Professional services Tech IT services
+AMP,#475,$39.77 B,USA,$396.94,0.53%,13.98%,Financial services
+LHX,#476,$39.77 B,USA,$209.84,0.26%,-0.25%,Defense contractors
+SYY,#477,$39.60 B,USA,$79.55,0.29%,4.04%,Food
+A,#481,$39.07 B,USA,$133.34,-0.54%,-12.50%,Biotech  Manufacturing
+AME,#484,$38.88 B,USA,$168.50,1.32%,16.72%,Electronics  Manufacturing
+CTSH,#487,$38.39 B,USA,$77.10,-1.53%,15.71%,Professional services IT services
+PRU,#490,$38.11 B,USA,$105.58,-2.79%,2.53%,Insurance
+DOW,#494,$37.91 B,USA,$53.99,0.20%,-8.62%,Chemicals Dow jones
+ZS,#498,$37.81 B,USA,$254.93,2.21%,83.32%,Software Tech IT security
+NEM,#499,$37.79 B,USA,$32.79,-1.65%,-31.08%,Mining  Gold mining
+MPLX,#500,$37.76 B,USA,$37.72,-0.19%,9.14%,Oil&Gas  Energy
+LNG,#505,$37.64 B,USA,$157.99,-0.65%,7.13%,NA
+LNG,#505,$37.64 B,USA,$157.99,-0.65%,7.13%,NA
+EA,#506,$37.59 B,USA,$140.61,1.27%,25.78%,Tech Video games Entertainment Esports
+CTVA,#507,$37.58 B,USA,$53.60,0.68%,-14.38%,Chemicals Agriculture
+D,#508,$37.40 B,USA,$44.70,1.18%,-22.57%,Electricity Utility companies  Energy
+GEHC,#511,$37.03 B,USA,$81.34,-0.88%,18.90%,Medical equipment  Manufacturing
+KVUE,#513,$37.01 B,USA,$19.33,0.00%,N/A,Consumer goods
+OTIS,#514,$36.92 B,USA,$91.08,0.23%,9.99%,Manufacturing
+KMI,#515,$36.92 B,USA,$16.61,-0.12%,-7.67%,Oil&Gas Transportation  Energy Infrastructure
+YUM,#520,$36.60 B,USA,$130.27,-0.10%,-0.68%,Restaurant chains
+FIS,#521,$36.59 B,USA,$61.76,0.52%,-16.48%,Financial services Tech
+IT,#522,$36.52 B,USA,$463.52,1.61%,32.05%,Professional services
+NET,#524,$36.42 B,USA,$107.92,19.50%,85.53%,Software Internet Tech IT security
+VRSK,#526,$36.33 B,USA,$250.61,0.54%,42.21%,Professional services
+MDB,#529,$36.15 B,USA,$500.90,5.43%,126.86%,Software Tech
+MPWR,#530,$36.13 B,USA,$752.31,2.07%,47.39%,Semiconductors Tech Electronics Tech Hardware
+CMI,#533,$35.70 B,USA,$251.78,0.74%,2.28%,Machinery manufacturing  Manufacturing
+GPN,#536,$35.41 B,USA,$136.00,-0.46%,21.82%,Financial services Tech
+GIS,#537,$35.40 B,USA,$62.34,-2.68%,-17.12%,Food
+TTD,#541,$34.96 B,USA,$71.31,1.62%,42.96%,Software Internet Tech
+BIIB,#542,$34.91 B,USA,$240.98,0.28%,-16.03%,Pharmaceuticals Biotech
+VEEV,#543,$34.90 B,USA,$216.76,0.64%,25.19%,Software Tech
+ON,#547,$34.52 B,USA,$80.80,0.11%,-4.66%,Semiconductors Tech Electronics
+COIN,#551,$33.97 B,USA,$141.99,7.12%,138.12%,Financial services Internet Tech  Bitcoin Stock/Crypto exchanges
+CSGP,#552,$33.94 B,USA,$83.13,1.66%,9.68%,Real estate Tech
+EXC,#558,$33.68 B,USA,$33.84,0.27%,-15.38%,Electricity
+MRNA,#562,$33.32 B,USA,$87.41,-6.67%,-46.86%,Pharmaceuticals Biotech mRNA therapeutics
+NDAQ,#566,$33.03 B,USA,$57.25,0.86%,-2.93%,Financial services Stock exchanges Stock/Crypto exchanges
+PPG,#569,$32.91 B,USA,$139.58,0.69%,8.32%,Chemicals  Paint & Coating
+FICO,#570,$32.89 B,USA,"$1,324",0.18%,95.33%,Software Tech
+CDW,#571,$32.85 B,USA,$245.23,0.52%,20.59%,Retail
+KR,#572,$32.66 B,USA,$45.41,-0.07%,2.99%,Retail  Supermarket Chains
+MLM,#573,$32.58 B,USA,$527.14,0.33%,49.23%,Building materials
+HUBS,#574,$32.54 B,USA,$646.63,2.85%,80.30%,Software Tech
+ROK,#576,$32.48 B,USA,$283.50,1.72%,-1.46%,NA
+XEL,#580,$32.09 B,USA,$58.17,0.29%,-13.59%,Electricity Utility companies  Energy
+VMC,#581,$31.88 B,USA,$240.00,0.65%,29.67%,Building materials
+EXR,#587,$31.32 B,USA,$143.38,-0.06%,-13.45%,Real estate
+GFS,#595,$30.94 B,USA,$55.94,2.12%,-13.81%,Semiconductors Tech Tech Hardware
+LYB,#596,$30.94 B,USA,$95.40,0.44%,-3.28%,Chemicals
+VICI,#599,$30.74 B,USA,$29.72,0.17%,-13.35%,Real estate Investment  REITs
+ED,#600,$30.74 B,USA,$89.06,0.44%,-1.25%,Electricity  Energy
+EFX,#601,$30.72 B,USA,$249.18,-1.14%,20.53%,Financial services
+HAL,#602,$30.71 B,USA,$34.51,-1.48%,-8.36%,Oil&Gas  Energy
+PWR,#606,$30.52 B,USA,$210.11,1.13%,37.81%,Engineering
+DLTR,#609,$30.39 B,USA,$139.50,-0.99%,-6.41%,Retail
+WST,#611,$30.30 B,USA,$409.64,-0.31%,53.18%,Pharmaceuticals Packaging
+XYL,#622,$30.03 B,USA,$124.30,1.57%,17.20%,NA
+RCL,#623,$29.99 B,USA,$116.97,-3.31%,59.08%,Travel Cruise Lines
+ANSS,#628,$29.75 B,USA,$342.28,-0.88%,26.11%,Software Tech
+DG,#629,$29.67 B,USA,$135.21,-0.32%,-40.96%,Retail
+GBTC,#638,$29.41 B,USA,$42.48,4.42%,299.62%,Investment  Bitcoin
+BKR,#640,$29.28 B,USA,$29.06,-0.89%,-9.70%,Oil&Gas  Energy
+PEG,#644,$29.11 B,USA,$58.42,0.38%,-1.91%,Electricity  Energy
+DD,#645,$29.10 B,USA,$67.68,0.86%,-10.67%,Chemicals
+FTV,#648,$29.00 B,USA,$82.70,0.56%,21.23%,Conglomerate
+ADM,#661,$28.29 B,USA,$53.05,0.66%,-34.18%,Food
+KEYS,#666,$28.21 B,USA,$161.52,0.21%,-11.51%,Software Tech
+HPQ,#669,$28.16 B,USA,$28.42,0.46%,-4.18%,Tech Electronics Tech Hardware
+RBLX,#676,$27.69 B,USA,$44.40,-1.05%,21.98%,Video games Entertainment
+GLW,#678,$27.33 B,USA,$32.04,0.98%,-8.46%,NA
+DFS,#679,$27.30 B,USA,$109.18,0.31%,-4.67%,Financial services
+BF-A,#680,$27.21 B,USA,$58.27,-0.50%,-9.59%,Alcoholic beverages Beverages
+FANG,#683,$27.15 B,USA,$151.74,-1.13%,7.26%,Oil&Gas  Energy
+RMD,#684,$27.15 B,USA,$184.63,0.48%,-14.17%,Medical devices
+HIG,#685,$27.10 B,USA,$90.81,1.20%,18.99%,Insurance Financial services
+DVN,#691,$26.64 B,USA,$41.59,-1.93%,-31.03%,Oil&Gas  Energy
+TTWO,#702,$26.41 B,USA,$154.91,-8.66%,39.71%,Tech Video games Entertainment Esports
+CBRE,#703,$26.37 B,USA,$86.55,0.69%,-1.27%,Real estate Investment
+SYM,#705,$26.10 B,USA,$46.71,8.65%,179.20%,Tech  Robotics
+DAL,#707,$26.06 B,USA,$40.51,0.40%,3.85%,Airlines Travel Transportation
+SPLK,#710,$26.04 B,USA,$154.54,0.19%,43.60%,Software Tech
+ZBH,#720,$25.66 B,USA,$122.80,-0.20%,-4.28%,Medical devices
+CAH,#728,$25.52 B,USA,$104.95,2.16%,34.10%,Healthcare
+MTD,#729,$25.46 B,USA,"$1,175",-4.12%,-23.47%,Manufacturing Scientific & Technical Instruments
+TSCO,#730,$25.41 B,USA,$235.08,1.40%,0.56%,Retail
+ULTA,#731,$25.37 B,USA,$522.63,0.68%,0.11%,Retail Cosmetics and Beauty
+PINS,#741,$24.99 B,USA,$36.87,-9.45%,49.09%,Internet
+EIX,#745,$24.81 B,USA,$64.70,-0.03%,-1.69%,Electricity Utility companies  Energy
+AVB,#746,$24.80 B,USA,$174.63,0.06%,-3.18%,Real estate Investment
+OWL,#749,$24.61 B,USA,$17.47,6.59%,32.95%,Financial services Asset Management
+WAB,#752,$24.48 B,USA,$136.68,-0.04%,33.16%,NA
+WEC,#754,$24.46 B,USA,$77.55,0.19%,-14.71%,Electricity Utility companies  Energy
+CHD,#757,$24.34 B,USA,$98.83,-1.11%,20.54%,Consumer goods
+WY,#759,$24.28 B,USA,$33.28,0.82%,-1.57%,NA
+VRT,#760,$24.22 B,USA,$63.52,3.00%,305.88%,NA
+HWM,#766,$24.12 B,USA,$58.60,-0.96%,44.87%,Aerospace
+TW,#767,$24.03 B,USA,$102.39,1.35%,40.16%,Financial services
+RJF,#770,$24.01 B,USA,$114.88,2.48%,3.50%,Financial services
+TROW,#774,$23.80 B,USA,$106.33,-2.37%,-9.15%,Investment
+NVR,#776,$23.79 B,USA,"$7,448",-0.52%,47.47%,Financial services Construction
+AWK,#777,$23.79 B,USA,$122.20,0.30%,-18.02%,Utility companies
+SBAC,#788,$23.46 B,USA,$217.45,0.58%,-24.88%,Real estate Investment Telecommunication  REITs Infrastructure
+BR,#789,$23.43 B,USA,$198.98,-0.01%,36.60%,Professional services Financial services
+WBD,#793,$23.20 B,USA,$9.64,-1.93%,-32.92%,Media/Press Entertainment
+BRO,#797,$23.05 B,USA,$81.00,1.31%,38.91%,Insurance
+RKT,#800,$22.95 B,USA,$11.55,0.61%,27.06%,Real estate Financial services
+FITB,#802,$22.91 B,USA,$33.65,0.78%,-9.69%,Banks Financial services
+BLDR,#806,$22.85 B,USA,$185.33,0.04%,130.77%,Building materials
+HEI,#809,$22.71 B,USA,$188.06,0.76%,8.40%,Electronics
+ALGN,#810,$22.69 B,USA,$296.37,0.46%,-7.78%,Tech Medical devices
+MOH,#811,$22.65 B,USA,$388.67,1.88%,28.98%,Healthcare Insurance
+DOV,#816,$22.45 B,USA,$160.53,0.26%,4.82%,Manufacturing
+EQR,#819,$22.32 B,USA,$58.86,-0.57%,-8.52%,Real estate
+JBHT,#820,$22.25 B,USA,$215.58,1.03%,12.69%,Transportation
+MTB,#825,$22.15 B,USA,$133.33,1.30%,-15.50%,Banks Financial services
+EBAY,#828,$22.02 B,USA,$42.43,0.98%,-12.32%,E-Commerce Internet Tech
+STT,#829,$21.99 B,USA,$72.84,0.62%,-21.28%,Banks Financial services
+PTC,#832,$21.88 B,USA,$183.10,0.86%,35.61%,Professional services Software Tech
+ILMN,#833,$21.88 B,USA,$137.84,-3.83%,-29.62%,Biotech  Manufacturing Genomics
+UWMC,#834,$21.87 B,USA,$7.06,2.62%,69.30%,Financial services
+PHM,#835,$21.86 B,USA,$103.10,-0.15%,85.53%,Construction
+DECK,#840,$21.69 B,USA,$845.22,1.54%,100.86%,Retail Footwear
+DTE,#847,$21.55 B,USA,$104.41,0.17%,-6.78%,Electricity Utility companies  Energy
+FCNCA,#849,$21.54 B,USA,"$1,495",1.13%,94.74%,Banks Financial services
+FE,#854,$21.40 B,USA,$37.31,4.25%,-5.18%,Electricity  Energy
+ALNY,#855,$21.33 B,USA,$170.03,0.31%,-21.13%,Pharmaceuticals Biotech
+ROL,#863,$21.04 B,USA,$43.48,-0.57%,22.79%,NA
+ETR,#869,$20.71 B,USA,$97.95,0.56%,-5.28%,Electricity Utility companies  Energy
+WRB,#871,$20.64 B,USA,$80.48,0.75%,17.44%,Insurance
+LYV,#873,$20.62 B,USA,$89.53,1.74%,11.69%,Entertainment
+TDY,#879,$20.47 B,USA,$434.03,0.78%,-0.45%,Conglomerate
+IFF,#882,$20.40 B,USA,$79.94,-0.71%,-12.50%,Flavors & Fragrances Cosmetics and Beauty
+ARE,#883,$20.32 B,USA,$116.20,-1.44%,-29.61%,Real estate
+INVH,#884,$20.32 B,USA,$33.07,1.16%,1.35%,Real estate
+AXON,#887,$20.30 B,USA,$270.98,0.74%,47.42%,NA
+VRSN,#891,$20.25 B,USA,$198.38,-1.31%,-4.67%,Internet
+DKNG,#892,$20.22 B,USA,$43.38,1.33%,162.43%,Internet Gambling Entertainment
+STLD,#893,$20.22 B,USA,$124.99,0.12%,3.00%,Steel producers Steel industry
+HPE,#898,$20.12 B,USA,$15.48,-0.13%,-4.68%,Tech Networking hardware
+GPC,#899,$20.07 B,USA,$143.18,0.61%,-15.40%,auto parts
+BAX,#900,$20.06 B,USA,$39.55,-2.25%,-1.47%,Pharmaceuticals Healthcare Biotech
+IRM,#902,$20.03 B,USA,$68.63,0.10%,29.39%,Professional services
+DRI,#904,$20.02 B,USA,$167.66,-0.31%,13.47%,Restaurant chains Food
+ZM,#906,$20.00 B,USA,$65.70,2.82%,-14.42%,Software Internet Tech
+CCL,#908,$19.99 B,USA,$15.31,-2.42%,32.78%,Travel Cruise Lines
+FLT,#916,$19.74 B,USA,$273.40,3.12%,34.03%,Financial services
+HUBB,#924,$19.46 B,USA,$363.01,1.34%,50.86%,Electronics
+TRGP,#925,$19.41 B,USA,$87.09,-0.92%,17.09%,Oil&Gas  Energy
+LUV,#928,$19.38 B,USA,$32.49,0.49%,-6.77%,Airlines Travel Transportation
+CBOE,#929,$19.36 B,USA,$183.50,-0.36%,46.05%,Financial services Stock exchanges Stock/Crypto exchanges
+AKAM,#930,$19.35 B,USA,$128.32,1.21%,49.71%,Software Internet Tech IT security
+ES,#934,$19.20 B,USA,$54.98,1.68%,-29.68%,Electricity Utility companies  Energy
+WBA,#935,$19.17 B,USA,$22.24,-1.33%,-37.89%,Pharmaceuticals Retail Dow jones  Drugstore
+IOT,#937,$19.16 B,USA,$35.47,3.38%,135.84%,Software Tech IoT Tech Hardware
+WAT,#942,$19.08 B,USA,$322.82,-1.18%,-4.11%,Manufacturing Scientific & Technical Instruments
+PPL,#944,$19.08 B,USA,$25.87,0.82%,-7.80%,Electricity  Energy
+ENTG,#946,$19.05 B,USA,$126.93,1.75%,49.82%,Semiconductors Tech
+BAH,#947,$19.03 B,USA,$146.69,1.79%,53.59%,Professional services IT services
+CLX,#948,$19.01 B,USA,$153.20,-0.66%,2.07%,Consumer goods
+LH,#950,$18.89 B,USA,$222.59,-0.09%,-8.55%,Pharmaceuticals Biotech
+SIRI,#956,$18.82 B,USA,$4.90,-1.80%,2.51%,Telecommunication
+TSN,#958,$18.77 B,USA,$52.58,-2.58%,-13.29%,Food
+MKL,#959,$18.76 B,USA,"$1,429",1.45%,5.46%,Insurance Investment
+COO,#961,$18.71 B,USA,$376.60,0.79%,12.21%,Glasses and contact lenses
+BALL,#963,$18.65 B,USA,$59.17,0.05%,7.52%,Packaging
+PFG,#964,$18.64 B,USA,$78.20,0.57%,-12.77%,Insurance Financial services Investment
+TYL,#966,$18.57 B,USA,$440.99,1.34%,34.85%,Software Tech
+ERIE,#971,$18.54 B,USA,$354.71,1.29%,48.60%,Insurance
+LPLA,#972,$18.52 B,USA,$248.13,1.77%,2.43%,Financial services
+EXPD,#973,$18.51 B,USA,$127.36,0.14%,13.83%,Transportation
+NTAP,#974,$18.51 B,USA,$89.85,1.05%,36.16%,Software Tech
+WMG,#975,$18.49 B,USA,$35.71,1.19%,1.77%,Entertainment
+WDC,#978,$18.42 B,USA,$56.82,-0.53%,35.32%,Electronics
+SNAP,#981,$18.33 B,USA,$11.11,0.09%,1.18%,Internet Tech
+K,#982,$18.32 B,USA,$53.49,-2.64%,-20.32%,Food
+VTR,#983,$18.32 B,USA,$45.53,0.02%,-9.93%,Real estate
+J,#985,$18.28 B,USA,$145.52,1.64%,19.43%,Professional services Engineering
+CTRA,#987,$18.27 B,USA,$24.30,-0.82%,-0.25%,Oil&Gas  Energy
+WLK,#991,$18.21 B,USA,$142.12,-0.48%,17.83%,Chemicals
+EXPE,#993,$18.20 B,USA,$131.11,-17.78%,11.38%,Internet Tech Travel Online Travel
+FDS,#994,$18.18 B,USA,$477.59,1.60%,11.78%,Software Financial services Tech
+AEE,#995,$18.06 B,USA,$68.70,1.15%,-17.94%,Electricity  Energy
+HBAN,#998,$17.97 B,USA,$12.41,0.73%,-18.68%,Banks Financial services
+JBL,#999,$17.82 B,USA,$139.77,2.82%,71.22%,Electronics  Manufacturing
+CNP,#1010,$17.37 B,USA,$27.53,0.36%,-3.91%,Electricity  Energy
+MKC,#1014,$17.33 B,USA,$64.65,-1.78%,-11.94%,Food
+IEX,#1017,$17.25 B,USA,$228.20,1.05%,2.02%,NA
+HOLX,#1019,$17.23 B,USA,$73.44,0.01%,-10.92%,Medical devices
+RS,#1020,$17.21 B,USA,$299.61,0.73%,31.96%,Steel producers Steel industry Aluminum
+ABMD,#1021,$17.18 B,USA,$381.02,0.00%,N/A,Medical devices
+CINF,#1025,$17.09 B,USA,$108.89,1.20%,-13.75%,Insurance
+TXT,#1026,$17.09 B,USA,$87.20,-0.45%,18.03%,Aircraft manufacturers Conglomerate  Manufacturing
+ATO,#1029,$17.06 B,USA,$113.11,0.16%,-1.30%,Utility companies
+CSL,#1040,$16.84 B,USA,$346.11,0.98%,36.44%,Building materials
+SWKS,#1041,$16.83 B,USA,$105.05,0.44%,-13.09%,Semiconductors Tech Electronics Tech Hardware
+OMC,#1047,$16.74 B,USA,$84.59,-2.35%,-9.29%,Professional services Advertising
+ENPH,#1048,$16.72 B,USA,$122.47,4.78%,-41.57%,Software Tech Electronics
+BMRN,#1052,$16.66 B,USA,$88.46,0.35%,-20.09%,Pharmaceuticals Biotech
+RF,#1053,$16.63 B,USA,$18.00,0.61%,-23.50%,Financial services
+EPAM,#1054,$16.51 B,USA,$286.27,-0.31%,-21.67%,Professional services Software Tech IT services
+CMS,#1055,$16.51 B,USA,$56.08,0.58%,-7.31%,Electricity Utility companies  Energy
+AVY,#1056,$16.49 B,USA,$204.77,0.89%,13.19%,Manufacturing
+NTRS,#1067,$16.33 B,USA,$79.64,1.49%,-18.40%,Financial services
+MAS,#1068,$16.30 B,USA,$72.61,-0.97%,34.46%,Manufacturing
+BBY,#1070,$16.28 B,USA,$75.60,0.15%,-11.02%,Retail Electronics
+SUI,#1071,$16.28 B,USA,$125.50,0.48%,-20.58%,Real estate Investment  REITs
+LII,#1073,$16.26 B,USA,$457.13,1.96%,74.03%,NA
+WSO,#1074,$16.26 B,USA,$415.52,1.49%,40.76%,NA
+CE,#1076,$16.21 B,USA,$148.92,0.01%,23.84%,Chemicals
+FSLR,#1079,$16.18 B,USA,$151.50,5.82%,-7.59%,Renewable energy  Energy  Manufacturing
+CG,#1080,$16.17 B,USA,$44.78,-1.82%,30.44%,Investment
+L,#1081,$16.16 B,USA,$72.75,1.01%,17.81%,Conglomerate
+FMCCT,#1083,$16.13 B,USA,$5.01,0.00%,39.17%,Financial services
+TPG,#1084,$16.13 B,USA,$44.53,2.53%,38.51%,Investment
+RIVN,#1094,$15.97 B,USA,$16.68,3.54%,-14.11%,Automakers Electric Vehicles  Manufacturing
+MGM,#1095,$15.96 B,USA,$46.74,0.67%,5.99%,Hotels Gambling Entertainment Travel
+GDDY,#1098,$15.93 B,USA,$112.92,0.29%,38.55%,Internet Tech
+DT,#1100,$15.92 B,USA,$53.80,-4.05%,21.97%,Software Tech AI
+HRL,#1104,$15.89 B,USA,$29.06,-1.39%,-34.74%,Food
+SYF,#1111,$15.75 B,USA,$38.73,-0.39%,6.87%,Financial services
+AVTR,#1115,$15.69 B,USA,$23.21,-0.39%,-3.73%,Chemicals
+TER,#1118,$15.64 B,USA,$102.31,3.90%,-4.97%,Electronics
+BSY,#1119,$15.63 B,USA,$52.83,0.96%,31.22%,Software Tech
+LDOS,#1123,$15.61 B,USA,$113.53,0.23%,15.91%,Software Tech IT security
+APP,#1125,$15.56 B,USA,$46.35,-0.43%,187.71%,Software Tech
+VST,#1127,$15.45 B,USA,$43.23,0.77%,90.52%,Electricity  Energy
+FWONK,#1128,$15.45 B,USA,$66.61,0.89%,-8.36%,NA
+MANH,#1132,$15.42 B,USA,$250.50,1.41%,74.43%,Software Tech
+ESS,#1137,$15.27 B,USA,$229.80,0.20%,-2.80%,Real estate Investment
+SSNC,#1145,$15.09 B,USA,$60.97,0.89%,-3.11%,Software Tech
+PKG,#1146,$15.08 B,USA,$168.33,0.87%,20.15%,NA
+NDSN,#1148,$15.05 B,USA,$263.63,0.67%,8.97%,Manufacturing
+NWS,#1151,$15.02 B,USA,$27.21,0.74%,30.50%,Media/Press
+SAIA,#1154,$15.00 B,USA,$565.26,2.20%,103.90%,Transportation
+POOL,#1157,$14.95 B,USA,$386.65,-0.18%,2.57%,NA
+MAA,#1159,$14.92 B,USA,$124.52,0.03%,-27.41%,Real estate Investment  REITs
+CF,#1160,$14.91 B,USA,$78.08,2.05%,-10.05%,Fertilizer companies
+PATH,#1161,$14.91 B,USA,$26.35,8.17%,67.30%,Software Tech AI
+GGG,#1162,$14.88 B,USA,$88.16,0.38%,27.84%,NA
+DPZ,#1164,$14.82 B,USA,$425.09,-0.35%,19.75%,Restaurant chains Food  Pizza
+CRBG,#1166,$14.80 B,USA,$23.51,0.56%,9.81%,Insurance Financial services Investment Asset Management
+CFG,#1169,$14.69 B,USA,$31.50,0.41%,-27.03%,Banks Financial services
+AMH,#1178,$14.56 B,USA,$35.23,0.60%,3.89%,Real estate Investment
+LW,#1180,$14.55 B,USA,$100.83,-0.05%,2.76%,Food
+OKTA,#1183,$14.52 B,USA,$87.85,3.74%,13.85%,Software Internet Tech IT security
+BEN,#1196,$14.26 B,USA,$27.10,1.01%,-12.10%,Investment
+VTRS,#1197,$14.23 B,USA,$11.68,1.04%,-0.34%,Pharmaceuticals Biotech
+PSTG,#1200,$14.13 B,USA,$44.75,1.38%,44.73%,Tech
+DGX,#1201,$14.12 B,USA,$126.74,0.16%,-13.20%,Diagnostics and Testing
+EQT,#1202,$14.12 B,USA,$34.33,-1.21%,12.56%,Oil&Gas  Energy
+NTNX,#1203,$14.11 B,USA,$58.15,-0.78%,100.10%,Software Tech
+WSM,#1204,$14.11 B,USA,$219.99,1.91%,73.70%,Retail  Home & Kitchen Appliances Furniture
+XPO,#1208,$14.03 B,USA,$120.84,2.37%,219.34%,Transportation
+HST,#1209,$14.00 B,USA,$19.58,0.15%,6.12%,Hotels Real estate Investment Travel
+FNF,#1212,$13.93 B,USA,$51.22,0.67%,21.06%,Insurance
+RPM,#1217,$13.89 B,USA,$107.81,1.24%,22.19%,Building materials  Paint & Coating
+UAL,#1219,$13.88 B,USA,$42.33,1.71%,-15.03%,Airlines Travel Transportation
+SNA,#1220,$13.85 B,USA,$262.43,-1.35%,5.28%,Tool manufacturers  Manufacturing
+ROKU,#1232,$13.65 B,USA,$95.80,1.16%,74.21%,Tech Electronics Tech Hardware
+SWK,#1234,$13.63 B,USA,$88.94,-0.37%,4.94%,Tool manufacturers  Manufacturing
+GEN,#1236,$13.59 B,USA,$21.35,2.30%,0.23%,Software Tech IT security
+ALB,#1237,$13.58 B,USA,$115.78,1.27%,-56.70%,Chemicals
+SJM,#1239,$13.57 B,USA,$127.90,-2.43%,-12.45%,Food
+FOX,#1242,$13.56 B,USA,$27.45,3.12%,-17.34%,Media/Press
+CELH,#1244,$13.52 B,USA,$58.39,-0.55%,-39.44%,Beverages
+KIM,#1245,$13.50 B,USA,$20.08,0.30%,-6.21%,Real estate Investment  REITs
+H,#1248,$13.45 B,USA,$130.48,-0.40%,16.72%,Hotels Travel
+PODD,#1249,$13.44 B,USA,$192.55,-2.08%,-32.80%,Medical devices
+TRU,#1251,$13.40 B,USA,$69.21,0.00%,0.04%,Financial services
+DKS,#1258,$13.25 B,USA,$162.17,1.38%,24.95%,Sports goods
+LECO,#1259,$13.24 B,USA,$231.62,0.66%,34.68%,NA
+AFRM,#1261,$13.23 B,USA,$43.86,-10.89%,230.02%,Financial services
