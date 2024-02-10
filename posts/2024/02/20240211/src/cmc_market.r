@@ -39,6 +39,8 @@ n <- df_mini %>%
     unique() %>%
     length()
 
+n
+
 
 # TRANSFORMATION
 
