@@ -3,6 +3,7 @@ suppressPackageStartupMessages({
     library(survival)
     library(fitdistrplus)
     library(lubridate)
+    library(glue)
     library(rvest)
     library(httr)
     library(tibble)
