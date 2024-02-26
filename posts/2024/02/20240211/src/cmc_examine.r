@@ -42,11 +42,83 @@ source("lib/library.r")
 #   - e.g., accounts payable, accrued expenses.
 
 
+# FUNCTIONS
+
+
+clean_text <- function(x) {
+    x %>%
+        gsub("[^ -~]", "", .) %>%
+        trimws()
+}
+
+parse_number <- function(x) {
+    x %>%
+        gsub("[^0-9.TBM]", "", .) %>%
+        gsub("T$", "e12", .) %>%
+        gsub("B$", "e9", .) %>%
+        gsub("M$", "e6", .) %>%
+        as.numeric()
+}
+
+parse_table <- function(html) {
+    ticker <- html %>%
+        html_node("div.company-code") %>%
+        html_text() %>%
+        clean_text()
+
+    tab <- html %>%
+        html_node("table")
+
+    if (is.na(tab)) {
+        return(NULL)
+    }
+
+    tab <- tab %>%
+        html_table() %>%
+        setNames(c("year", "item", "change"))
+
+    tab %>%
+        mutate(ticker) %>%
+        select(ticker, year, item)
+}
+
+scrape_and_parse <- function(url, key, is_date = FALSE) {
+    df <- url %>%
+        read_html() %>%
+        parse_table() %>%
+        ungroup() %>%
+        mutate(item = parse_number(item)) %>%
+        setNames(c("ticker", "date", key))
+    
+    if (is_date) {
+        df <- df %>%
+            mutate(date = year(ymd(date)))
+    }
+
+    df
+}
+
+
 # SETUP
 
 
-df <- here("cmc_full.csv") %>%
+df <- here("../data/csv/cmc_full.csv") %>%
     read_csv()
+
+
+# SINGLETON
+
+
+df <- scrape_and_parse("https://companiesmarketcap.com/berkshire-hathaway/marketcap/", "cap", FALSE) %>%
+    left_join(scrape_and_parse("https://companiesmarketcap.com/berkshire-hathaway/total-assets/", "ast", TRUE)) %>%
+    left_join(scrape_and_parse("https://companiesmarketcap.com/berkshire-hathaway/total-liabilities/", "lia", TRUE)) %>%
+    left_join(scrape_and_parse("https://companiesmarketcap.com/berkshire-hathaway/total-debt/", "dbt", TRUE)) %>%
+    left_join(scrape_and_parse("https://companiesmarketcap.com/berkshire-hathaway/cash-on-hand/", "csh", TRUE))
+
+df %>%
+    mutate(bok = ast - lia,
+           p_c = cap / csh,
+           b_c = bok / csh)
 
 
 # COMBOS
