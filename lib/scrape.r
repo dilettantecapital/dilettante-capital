@@ -48,7 +48,7 @@ get_yahoo <- function(url) {
         dplyr::arrange(dplyr::desc(date))
 }
 
-yahoo <- function(symbol, interval = "1d", events = "history", date0 = "1900-01-01", date1 = lubridate::today()) {
+yahoo <- function(symbol, interval = "1d", events = "history", date0 = "1900-01-01", date1 = lubridate::today() + 1) {
     df <- symbol %>%
         api_yahoo(interval, events, date0, date1) %>%
         get_yahoo()
@@ -57,5 +57,3 @@ yahoo <- function(symbol, interval = "1d", events = "history", date0 = "1900-01-
         cbind(df) %>%
         dplyr::as_tibble()
 }
-
-
