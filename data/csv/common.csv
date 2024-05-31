@@ -1,0 +1,19 @@
+sym,cat,subcat,name
+^SPX,Equities,USA,S&P 500
+^IXIC,Equities,USA,NASDAQ Composite
+^DJI,Equities,USA,Dow Jones Industrial Average
+^RUT,Equities,USA,Russell 2000
+000001.SS,Equities,China,SSE Composite
+^HSI,Equities,China,Hang Seng
+^N225,Equities,Japan,Nikkei 225
+^FTSE,Equities,UK,FTSE 100
+^NSEI,Equities,India,NIFTY 50
+^GDAXI,Equities,Germany,DAX
+^FCHI,Equities,France,CAC 40
+^GSPTSE,Equities,Canada,S&P/TSX Composite
+^AXJO,Equities,Australia,S&P/ASX 200
+^VIX,Index,USA,CBOE Volatility
+^TNX,Bonds,USA,10 Year Treasury Note Yield
+CL=F,Commodites,Energy,Crude Oil
+GC=F,Commodites,Metals,Gold
+DX-Y.NYB,Currencies,USA,US Dollar
