@@ -20,51 +20,74 @@ squak <- function(f) {
     }
 }
 
+add_hlc3 <- function(df) {
+    df %>%
+        mutate(hlc3 = (high + low + close) / 3)
+}
+
+add_mom <- function(df) {
+    df %>%
+        mutate(mom = log(hlc3 / lead(hlc3)))
+}
+
+filter_month <- function(df, year, month) {
+    df %>%
+        filter(year(date) == 2024,
+               month(date) == 5)
+}
+
+omit_na <- function(df) {
+    df %>%
+        na.omit()
+}
+
+monthly <- function(sym) {
+    lst <- sym %>%
+        lapply(squak(yahoo)) %>%
+        setNames(sym)
+
+    lst_mon <- lst %>%
+        lapply(add_hlc3) %>%
+        lapply(add_mom) %>%
+        lapply(filter_month, 2024, 5)
+
+    lst_calc <- lst_mon %>%
+        lapply(function(df) {
+            open <- df %>%
+                filter(date == min(date)) %>%
+                pull(open)
+
+            close <- df %>%
+                filter(date == max(date)) %>%
+                pull(close)
+
+            change <- percent_change(open, close)
+
+            snr <- df %>%
+                pull(mom) %>%
+                na.omit() %>%
+                (function(x) mean(x) / sd(x))
+
+            data.frame(sym = df$symbol[1],
+                       open = round(open, 2),
+                       close = round(close, 2),
+                       change = round(close - open, 2),
+                       percent = round((close - open) / open, 3),
+                       snr = round(snr, 2))
+        })
+
+    lst_calc %>%
+        do.call(rbind, .) %>%
+        unrowname()
+}
+
 
 # COMMON
 
 
 df <- read_csv("data/csv/common.csv")
 
-lst <- df %>%
-    pull(sym) %>%
-    lapply(squak(yahoo)) %>%
-    setNames(df$sym)
-
-lst["GC=F"]
-
-df_calc <- lst %>%
-    lapply(function(df) {
-        df_month <- df %>%
-            mutate(hlc3 = (high + low + close) / 3,
-                   mom = log(hlc3 / lead(hlc3))) %>%
-            filter(year(date) == year(today())) %>%
-            filter(month(date) == month(today()))
-
-        open <- df_month %>%
-            filter(date == min(date)) %>%
-            pull(open)
-
-        close <- df_month %>%
-            filter(date == max(date)) %>%
-            pull(open)
-
-        change <- percent_change(open, close)
-
-        snr <- df_month %>%
-            pull(mom) %>%
-            na.omit() %>%
-            (function(x) mean(x) / sd(x))
-
-        data.frame(sym = df$symbol[1],
-                   open = round(open, 2),
-                   close = round(close, 2),
-                   change = round(close - open, 2),
-                   percent = round((close - open) / open, 3),
-                   snr = round(snr, 2))
-    }) %>%
-    do.call(rbind, .) %>%
-    unrowname()
+df_calc <- monthly(df$sym)
 
 df %>%
     left_join(df_calc) %>%
@@ -72,45 +95,15 @@ df %>%
     arrange(-snr) %>%
     write_csv(here("digest.csv"))
 
+# PICKING
 
-# FLOWS
+ndx <- read_tsv("data/tsv/ndx.tsv")
 
+ndx_calc <- monthly(ndx$symbol)
 
-sym <- "^SPX"
-
-df_month <- yahoo(sym) %>%
-    filter(year(date) == year(today())) %>%
-    filter(month(date) == month(today()))
-
-first <- df_month %>%
-    filter(date == min(date)) %>%
-    pull(open)
-
-last <- df_month %>%
-    filter(date == max(date)) %>%
-    pull(open)
-
-percent_change(first, last)
-
-price <- df_month %>%
-    pull(close) %>%
-    log() %>%
-    mean() %>%
-    exp()
-
-volume <- df_month %>%
-    pull(volume) %>%
-    sum()
-
-flow_gross <- df_month %>%
-    mutate(flow = close * volume) %>%
-    pull(flow) %>%
-    sum()
-
-flow_net <- df_month %>%
-    mutate(flow = (close - open) * volume) %>%
-    pull(flow) %>%
-    na.omit() %>%
-    sum()
-
-flow_net <- (last - first) * volume
+ndx %>%
+    select(name, sym = symbol) %>%
+    left_join(ndx_calc) %>%
+    select(name, sym, open, close, change, percent, snr) %>%
+    arrange(-snr) %>%
+    write_csv(here("picking.csv"))
