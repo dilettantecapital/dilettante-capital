@@ -106,47 +106,55 @@ wil <- read_csv("data/csv/wilshire.csv") %>%
 
 sym <- wil$symbol
 
-lst <- sym %>%
-    lapply(squak(yahoo)) %>%
-    setNames(sym)
+for (x in sym) {
+    print(x)
+    tryCatch({
+        yahoo(x) %>%
+            write_csv(glue("data/bulk/{x}.csv"), progress = FALSE)
+    }, error = function(e) {})
+}
 
-lst_mon <- lst %>%
-    lapply(add_hlc3) %>%
-    lapply(add_mom) %>%
-    lapply(filter_month, 2024, 7)
+# lst <- sym %>%
+#     lapply(squak(yahoo)) %>%
+#     setNames(sym)
 
-lst_calc <- lst_mon %>%
-    lapply(function(df) {
-        open <- df %>%
-            filter(date == min(date)) %>%
-            pull(open)
+# lst_mon <- lst %>%
+#     lapply(add_hlc3) %>%
+#     lapply(add_mom) %>%
+#     lapply(filter_month, 2024, 7)
 
-        close <- df %>%
-            filter(date == max(date)) %>%
-            pull(close)
+# lst_calc <- lst_mon %>%
+#     lapply(function(df) {
+#         open <- df %>%
+#             filter(date == min(date)) %>%
+#             pull(open)
 
-        change <- percent_change(open, close)
+#         close <- df %>%
+#             filter(date == max(date)) %>%
+#             pull(close)
 
-        snr <- df %>%
-            pull(mom) %>%
-            na.omit() %>%
-            (function(x) mean(x) / sd(x))
+#         change <- percent_change(open, close)
 
-        data.frame(sym = df$symbol[1],
-                    open = round(open, 2),
-                    close = round(close, 2),
-                    change = round(close - open, 2),
-                    percent = round((close - open) / open, 3),
-                    snr = round(snr, 2))
-    })
+#         snr <- df %>%
+#             pull(mom) %>%
+#             na.omit() %>%
+#             (function(x) mean(x) / sd(x))
 
-spx_calc <- lst_calc %>%
-    do.call(rbind, .) %>%
-    unrowname()
+#         data.frame(sym = df$symbol[1],
+#                     open = round(open, 2),
+#                     close = round(close, 2),
+#                     change = round(close - open, 2),
+#                     percent = round((close - open) / open, 3),
+#                     snr = round(snr, 2))
+#     })
 
-wil %>%
-    select(name = security, sym = symbol) %>%
-    left_join(spx_calc) %>%
-    select(name, sym, open, close, change, percent, snr) %>%
-    arrange(-snr) %>%
-    write_csv(here("picking.csv"))
+# spx_calc <- lst_calc %>%
+#     do.call(rbind, .) %>%
+#     unrowname()
+
+# wil %>%
+#     select(name = security, sym = symbol) %>%
+#     left_join(spx_calc) %>%
+#     select(name, sym, open, close, change, percent, snr) %>%
+#     arrange(-snr) %>%
+#     write_csv(here("picking.csv"))
