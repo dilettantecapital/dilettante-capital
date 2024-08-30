@@ -522,6 +522,7 @@ CBMG,Cellular Biomedicine
 CBOE,CBOE 
 CBRE,CBRE Group 
 CBRL,Cracker Barrel Old Country Store 
+CBS,"ViacomCBS, Inc."
 CBSH,Commerce Bancshares 
 CBT,Cabot 
 CBTX,CBTX 
@@ -753,6 +754,7 @@ CTBI,Community Trust Bancorp
 CTG,Computer Task 
 CTHR,Charles and Colvard 
 CTIB,CTI Industries 
+CTIB,Yunhong CTI Ltd.
 CTIC,CTI BioPharma 
 CTL,CenturyLink 
 CTLT,Catalent 
@@ -916,6 +918,7 @@ EBSB,Meridian Bancorp
 EBTC,Enterprise Bancorp 
 ECHO,Echo Global Logistics 
 ECL,Ecolab 
+ECOL,"US Ecology, Inc."
 ECOL,US Ecology 
 ECOM,ChannelAdvisor 
 ECPG,Encore Capital 
@@ -936,6 +939,7 @@ EGLE,Eagle Bulk Shipping
 EGOV,NIC 
 EGP,EastGroup Properties 
 EGRX,Eagle Pharma 
+EGY,"VAALCO Energy, Inc."
 EGY,Vaalco Energy 
 EHC,Encompass Health 
 EHTH,eHealth 
@@ -1282,6 +1286,7 @@ GPRE,Green Plains
 GPRO,GoPro 
 GPS,Gap 
 GPX,GP Strategies 
+GRA,W.R. Grace & Co.
 GRA,WR Grace 
 GRBK,Green Brick Partners 
 GRC,Gorman-Rupp 
@@ -1316,6 +1321,7 @@ GWB,Great Western Bancorp
 GWGH,GWG 
 GWRE,Guidewire Software 
 GWRS,Global Water Resources 
+GWW,"W.W. Grainger, Inc."
 GWW,WW Grainger 
 H,Hyatt Hotels 
 HA,Hawaiian 
@@ -1337,6 +1343,7 @@ HBMD,Howard Bancorp
 HBNC,Horizon Bancorp IN 
 HBP,Huttig Building Products 
 HCA,HCA 
+HCC,"Warrior Met Coal, Inc."
 HCC,Warrior Met Coal 
 HCCI,Heritage-Crystal Clean 
 HCFT,Hunt Companies Finance Trust 
@@ -1507,6 +1514,7 @@ INSM,Insmed
 INSP,Inspire Medical Systems 
 INSW,International Seaways 
 INT,World Fuel 
+INT,World Fuel Services Corp.
 INTC,Intel 
 INTG,The Intergroup 
 INTL,INTL FCStone 
@@ -1951,6 +1959,7 @@ MTEM,Molecular Templates
 MTEX,Mannatech 
 MTG,MGIC Investment 
 MTH,Meritage 
+MTN,"Vail Resorts, Inc."
 MTN,Vail Resorts 
 MTNB,Matinas BioPharma 
 MTOR,Meritor 
@@ -2946,6 +2955,7 @@ UA,Under Armour
 UAA,Under Armour 
 UAL,United Continental 
 UAMY,United States Antimony 
+UBA,"Urstadt Biddle Properties, Inc."
 UBA,Urstadt Biddle Properties 
 UBCP,United Bancorp 
 UBER,Uber Technologies 
@@ -2988,495 +2998,485 @@ UNP,Union Pacific
 UNTY,Unity Bancorp 
 UNVR,Univar 
 UONE,Urban One 
+UONEK,"Urban One, Inc."
 UONEK,Urban One 
 UPLD,Upland Software 
 UPS,United Parcel Service 
 UPWK,Upwork 
+URBN,"Urban Outfitters, Inc."
 URBN,Urban Outfitters 
 URI,United Rentals 
 UROV,Urovant Sciences 
+UROV,Urovant Sciences Ltd.
+USAK,"USA Truck, Inc."
 USAK,USA Truck 
 USAP,Universal Stainless and Alloy Products 
+USAT,"USA Technologies, Inc."
 USAT,USA 
 USB,US Bancorp 
 USCR,U S Concrete 
 USEG,US Energy 
+USEG,US Energy Corp.
 USFD,US Foods Holding 
+USFD,US Foods Holding Corp.
+USIO,"USIO, Inc."
 USLM,United States Lime and Minerals 
 USM,United States Cellular 
+USNA,"USANA Health Sciences, Inc."
 USNA,USANA Health Sciences 
 USPH,US Physical Therapy 
+USWS,"US Well Services, Inc."
 USWS,US Well Services 
+USX,"US Xpress Enterprises, Inc."
 USX,US Xpress Enterprises 
 UTHR,United Therapeutics 
 UTI,Universal Technical Institute 
 UTL,UNITIL 
+UTMD,"Utah Medical Products, Inc."
 UTMD,Utah Medical Products 
 UUU,Universal Security Instruments 
 UVE,Universal Insurance Holdings 
 UVSP,Univest Corp of Pennsylvania 
 UVV,Universal 
+V,"Visa, Inc."
 V,Visa 
 VAC,Marriot Vacations Worldwide 
+VAL,Valaris Plc
 VAL,Valspar 
+VALU,"Value Line, Inc."
 VALU,Value Line 
+VAPO,"Vapotherm, Inc."
 VAPO,Vapotherm 
+VAR,"Varian Medical Systems, Inc."
 VAR,Varian Medical 
+VBFC,Village Bank & Trust Financial Corp.
 VBFC,Village Bank and Trust Financial 
+VBIV,"VBI Vaccines, Inc."
 VBIV,VBI Vaccines 
+VBTX,"Veritex Holdings, Inc."
 VBTX,Veritex 
 VC,Visteon 
+VC,Visteon Corp.
 VCEL,Vericel 
+VCEL,Vericel Corp.
+VCRA,"Vocera Communications, Inc."
 VCRA,Vocera Communications 
+VCTR,"Victory Capital Holdings, Inc."
 VCTR,Victory Capital 
+VCYT,"Veracyte, Inc."
 VCYT,Veracyte 
+VEC,"Vectrus, Inc."
 VEC,Vectrus 
+VECO,"Veeco Instruments, Inc."
 VECO,Veeco Instruments 
+VEEV,"Veeva Systems, Inc."
 VEEV,Veeva 
+VER,"VEREIT, Inc."
 VER,VEREIT 
+VERI,"Veritone, Inc."
 VERI,Veritone 
+VERU,"Veru, Inc."
 VERU,Veru 
 VFC,V.F. Corp 
+VFC,VF Corp.
 VG,Vonage 
+VG,Vonage Holdings Corp.
 VGR,Vector 
+VGR,Vector Group Ltd.
 VHC,VirnetX Holding 
+VHC,VirnetX Holding Corp.
+VIAV,"Viavi Solutions, Inc."
 VIAV,Viavi 
+VICI,"VICI Properties, Inc."
 VICI,VICI Properties 
+VICL,"Vical, Inc."
+VICR,Vicor Corp.
 VICR,Vicor Corp. 
 VIRC,Virco Manufacturing 
+VIRC,Virco Manufacturing Corp.
+VIRT,"Virtu Financial, Inc."
 VIRT,Virtu Financial 
+VISI,"Volt Information Sciences, Inc."
+VISL,"Vislink Technologies, Inc."
 VIVO,Meridian Bioscience 
+VKTX,"Viking Therapeutics, Inc."
 VKTX,Viking Therapeutics 
+VLGEA,"Village Super Market, Inc."
 VLGEA,Village Super Market 
 VLO,Valero Energy 
+VLO,Valero Energy Corp.
+VLY,Valley National Bancorp
 VLY,Valley National Bancorp 
 VMC,Vulcan Materials 
+VMC,Vulcan Materials Co.
+VMI,"Valmont Industries, Inc."
 VMI,Valmont Industries 
+VMW,"VMware, Inc."
 VMW,Vmware 
 VNCE,Vince Holding 
+VNCE,Vince Holding Corp.
+VNDA,"Vanda Pharmaceuticals, Inc."
 VNDA,Vanda Pharma 
+VNE,"Veoneer, Inc."
 VNE,Veoneer 
+VNO,Vornado Realty Trust
 VNO,Vornado Realty Trust 
 VNRX,VolitionRX 
+VNRX,VolitionRX Ltd.
 VNTR,Venator Materials 
+VNTR,Venator Materials Plc
 VOXX,VOXX International 
+VOXX,VOXX International Corp.
+VOYA,"Voya Financial, Inc."
 VOYA,Voya Financial 
+VPG,"Vishay Precision Group, Inc."
 VPG,Vishay Precision 
+VRA,"Vera Bradley, Inc."
 VRA,Vera Bradley 
+VRAY,"ViewRay, Inc."
 VRAY,ViewRay 
 VREX,Varex Imaging 
+VREX,Varex Imaging Corp.
+VRML,"Vermillion, Inc."
+VRNS,"Varonis Systems, Inc."
 VRNS,Varonis 
+VRNT,"Verint Systems, Inc."
 VRNT,Verint 
 VRRM,Verra Mobility 
+VRRM,Verra Mobility Corp.
 VRS,Verso 
+VRS,Verso Corp.
+VRSK,"Verisk Analytics, Inc."
 VRSK,Verisk Analytics 
+VRSN,"VeriSign, Inc."
 VRSN,Verisign 
+VRTS,"Virtus Investment Partners, Inc."
 VRTS,Virtus Investment Partners 
 VRTU,Virtusa 
+VRTU,Virtusa Corp.
 VRTV,Veritiv 
+VRTV,Veritiv Corp.
+VRTX,"Vertex Pharmaceuticals, Inc."
 VRTX,Vertex Pharma 
+VSAT,"ViaSat, Inc."
 VSAT,ViaSat 
 VSEC,VSE Corp 
+VSEC,VSE Corp.
+VSH,"Vishay Intertechnology, Inc."
 VSH,Vishay Intertechnology 
+VSI,"Vitamin Shoppe, Inc."
+VSLR,"Vivint Solar, Inc."
 VSLR,Vivint Solar 
+VST,Vistra Corp.
 VST,Vistra Energy 
+VSTM,"Verastem, Inc."
 VSTM,Verastem 
+VSTO,"Vista Outdoor, Inc."
 VSTO,Vista Outdoor 
+VTNR,"Vertex Energy, Inc."
 VTNR,Vertex Energy 
+VTR,"Ventas, Inc."
 VTR,Ventas 
+VTVT,"vTv Therapeutics, Inc."
 VTVT,vTv Therapeutics 
 VUZI,Vuzix Corp 
+VUZI,Vuzix Corp.
 VVI,Viad 
+VVI,Viad Corp.
+VVUS,"VIVUS, Inc."
 VVUS,VIVUS 
+VVV,"Valvoline, Inc."
 VVV,Valvoline 
+VXRT,"Vaxart, Inc."
 VXRT,Vaxart 
+VYGR,"Voyager Therapeutics, Inc."
 VYGR,Voyager Therapeutics 
+VZ,"Verizon Communications, Inc."
 VZ,Verizon Communications 
+W,"Wayfair, Inc."
 W,Wayfair 
 WAB,Westinghouse Air Brake 
+WAB,Westinghouse Air Brake Technologies Corp.
+WABC,Westamerica Bancorporation
 WABC,Westamerica Bancorporation 
+WAFD,"Washington Federal, Inc."
 WAFD,Washington Federal 
+WAIR,"Wesco Aircraft Holdings, Inc."
+WAL,Western Alliance Bancorporation
 WAL,Western Alliance Bancorporation 
+WASH,"Washington Trust Bancorp, Inc."
 WASH,Washington Trust Bancorp 
+WAT,Waters Corp.
 WAT,Waters Corp. 
 WATT,Energous 
+WBA,"Walgreens Boots Alliance, Inc."
 WBA,Walgreens Boots Alliance 
+WBC,"WABCO Holdings, Inc."
 WBS,Webster Financial 
+WBS,Webster Financial Corp.
+WBT,"Welbilt, Inc."
 WBT,Welbilt Inc 
+WCC,"WESCO International, Inc."
 WCC,WESCO International 
+WCG,"WellCare Health Plans, Inc."
+WD,"Walker & Dunlop, Inc."
 WD,Walker and Dunlop 
+WDAY,"Workday, Inc."
 WDAY,Workday 
 WDC,Western Digital 
+WDC,Western Digital Corp.
+WDFC,WD-40 Co.
 WDFC,WD-40 Co. 
+WDR,"Waddell & Reed Financial, Inc."
 WDR,Waddell and Reed Financial 
+WEBK,"Wellesley Bancorp, Inc."
+WEC,"WEC Energy Group, Inc."
 WEC,Wec Energy 
+WELL,"Welltower, Inc."
 WELL,Welltower 
 WEN,Wendy's 
+WERN,"Werner Enterprises, Inc."
 WERN,Werner Enterprises 
+WETF,"WisdomTree Investments, Inc."
 WETF,WisdomTree Investments 
+WEX,"WEX, Inc."
 WEX,WEX 
+WEYS,"Weyco Group, Inc."
 WEYS,Weyco 
 WFC,Wells Fargo 
+WFC,Wells Fargo & Co.
+WGO,"Winnebago Industries, Inc."
 WGO,Winnebago Industries 
+WH,"Wyndham Hotels & Resorts, Inc."
 WH,Wyndham Hotels & Resorts 
 WHD,Cactus 
+WHG,"Westwood Holdings Group, Inc."
 WHG,Westwood 
+WHLM,"Wilhelmina International, Inc."
 WHLM,Wilhelmina International 
+WHLR,"Wheeler Real Estate Investment Trust, Inc."
 WHLR,Wheeler Real Estate Investment Trust 
 WHR,Whirlpool 
+WHR,Whirlpool Corp.
 WIFI,Boingo Wireless 
 WINA,Winmark 
+WINA,Winmark Corp.
+WING,"Wingstop, Inc."
 WING,Wingstop 
 WIRE,Encore Wire 
+WK,"Workiva, Inc."
 WK,Workiva 
+WKHS,"Workhorse Group, Inc."
 WKHS,Workhorse 
+WLDN,"Willdan Group, Inc."
 WLDN,Willdan 
 WLFC,Willis Lease Finance 
+WLFC,Willis Lease Finance Corp.
+WLH,"William Lyon Homes, Inc."
 WLK,Westlake Chemical 
+WLK,Westlake Chemical Corp.
 WLL,Whiting Petroleum 
+WLL,Whiting Petroleum Corp.
 WLTW,Willis Towers Watson 
+WLTW,Willis Towers Watson Plc
+WM,"Waste Management, Inc."
 WM,Waste Management 
 WMB,Williams Cos 
 WMC,Western Asset Mortgage Capital 
+WMC,Western Asset Mortgage Capital Corp.
 WMGI,Wright Medical 
+WMGI,Wright Medical Group NV
+WMK,"Weis Markets, Inc."
 WMK,Weis Markets 
 WMS,Advanced Drainage 
+WMT,"Walmart, Inc."
 WMT,Wal-Mart 
 WNC,Wabash National 
+WNC,Wabash National Corp.
+WNEB,"Western New England Bancorp, Inc."
 WNEB,Western New England Bancorp 
+WOR,"Worthington Industries, Inc."
 WOR,Worthington Industries 
+WOW,"WideOpenWest, Inc."
 WOW,WideOpenWest 
+WPC,"W.P. Carey, Inc."
 WPC,WP Carey 
+WPG,"Washington Prime Group, Inc."
 WPG,Washington Prime 
+WPX,"WPX Energy, Inc."
 WPX,WPX Energy 
+WRB,W.R. Berkley Corp.
 WRB,WR Berkley 
+WRE,Washington Real Estate Investment Trust
 WRE,Washington Real Estate Investment Trust 
+WRI,Weingarten Realty Investors
 WRI,Weingarten Realty Investors 
 WRK,WestRock 
+WRK,WestRock Co.
 WRLD,World Acceptance 
+WRLD,World Acceptance Corp.
+WRTC,"Wrap Technologies, Inc."
 WRTC,Wrap Technologies 
+WSBC,"WesBanco, Inc."
 WSBC,WesBanco 
+WSBF,"Waterstone Financial, Inc."
 WSBF,Waterstone Financial 
 WSC,WillScot 
+WSC,WillScot Mobile Mini Holdings Corp.
 WSFS,WSFS Financial 
+WSFS,WSFS Financial Corp.
+WSM,"Williams-Sonoma, Inc."
 WSM,Williams-Sonoma 
+WSO,"Watsco, Inc."
 WSO,Watsco 
+WSR,Whitestone REIT
 WSR,Whitestone REIT 
+WST,"West Pharmaceutical Services, Inc."
 WST,West Pharmaceutical 
+WSTG,"Wayside Technology Group, Inc."
 WSTG,Wayside Technology 
+WSTL,"Westell Technologies, Inc."
 WSTL,Westell 
+WTBA,"West Bancorporation, Inc."
 WTBA,West Bancorporation 
 WTFC,Wintrust Financial 
+WTFC,Wintrust Financial Corp.
+WTI,"W&T Offshore, Inc."
 WTI,W&T Offshore 
 WTM,White Mountains Insurance 
+WTM,White Mountains Insurance Group Ltd.
+WTRH,"Waitr Holdings, Inc."
 WTRH,Waitr 
+WTS,"Watts Water Technologies, Inc."
 WTS,Watts Water 
+WTT,"Wireless Telecom Group, Inc."
 WTT,Wireless Telecom 
 WTTR,Select Energy Services 
 WU,Western Union Co 
 WVE,WAVE Life Sciences 
+WVE,Wave Life Sciences Ltd.
 WVFC,WVS Financial 
+WVFC,WVS Financial Corp.
+WVVI,"Willamette Valley Vineyards, Inc."
 WVVI,Willamette Valley Vineyards 
+WW,"WW International, Inc."
+WWD,"Woodward, Inc."
 WWD,Woodward 
+WWE,"World Wrestling Entertainment, Inc."
 WWE,World Wrestling Entertainment 
+WWR,"Westwater Resources, Inc."
 WWR,Westwater Resources 
+WWW,"Wolverine World Wide, Inc."
 WWW,Wolverine World Wide 
 WY,Weyerhaeuser 
+WY,Weyerhaeuser Co.
+WYND,"Wyndham Destinations, Inc."
 WYND,Wyndham Destinations 
 WYNN,Wynn Resorts 
+WYNN,Wynn Resorts Ltd.
 WYY,WidePoint 
+WYY,WidePoint Corp.
 X,United States Steel 
 XAN,Exantas Capital 
+XBIT,"XBiotech, Inc."
 XBIT,XBiotech 
 XEC,Cimarex Energy 
+XEL,"Xcel Energy, Inc."
 XEL,Xcel Energy 
 XELA,Exela Technologies 
+XELB,"XCel Brands, Inc."
 XELB,Xcel Brands 
 XENT,Intersect ENT 
+XERS,"Xeris Pharmaceuticals, Inc."
 XERS,Xeris Pharmaceuticals 
+XFOR,"X4 Pharmaceuticals, Inc."
+XHR,"Xenia Hotels & Resorts, Inc."
 XHR,Xenia Hotels and Resorts 
+XLNX,"Xilinx, Inc."
 XLNX,Xilinx 
 XLRN,Acceleron Pharma 
+XNCR,"Xencor, Inc."
 XNCR,Xencor 
 XOG,Extraction Oil and Gas 
 XOM,Exxon Mobil 
 XOMA,XOMA 
+XOMA,XOMA Corp.
 XONE,The ExOne 
 XPER,Xperi Corp 
+XPER,Xperi Holding Corp.
 XPL,Solitario Exploration and Royalty 
+XPO,"XPO Logistics, Inc."
 XPO,XPO Logistics 
 XRAY,Dentsply Sirona 
 XRX,Xerox 
+XRX,Xerox Holdings Corp.
+XSPA,"XpresSpa Group, Inc."
 XSPA,XpresSpa Group 
+XTNT,"Xtant Medical Holdings, Inc."
 XTNT,Xtant Medical 
 XXII,22nd Century 
+XYL,"Xylem, Inc."
 XYL,Xylem 
 Y,Alleghany 
+YELP,"Yelp, Inc."
 YELP,Yelp 
+YETI,"YETI Holdings, Inc."
 YETI,YETI 
+YEXT,"Yext, Inc."
 YEXT,Yext 
+YMAB,"Y-mAbs Therapeutics, Inc."
 YMAB,Y-mAbs Therapeutics 
 YORW,The York Water 
-YRCW,YRC Worldwide 
-YTEN,Yield10 Bioscience 
-YUM,Yum! Brands 
-Z,Zillow 
-ZAGG,ZAGG 
-ZBH,Zimmer Biomet 
-ZBRA,Zebra 
-ZDGE,Zedge 
-ZEN,Zendesk 
-ZEUS,Olympic Steel 
-ZG,Zillow 
-ZGNX,Zogenix 
-ZION,Zions Bancorp 
-ZIOP,ZIOPHARM Oncology 
-ZIXI,Zix 
-ZM,Zoom Video 
-ZN,Zion Oil and Gas 
-ZNGA,Zynga 
-ZS,Zscaler 
-ZSAN,Zosano Pharma 
-ZTS,Zoetis 
-ZUMZ,Zumiez 
-ZUO,Zuora 
-ZYNE,Zynerba Pharma 
-UONEK,"Urban One, Inc."
-URBN,"Urban Outfitters, Inc."
-UROV,Urovant Sciences Ltd.
-UBA,"Urstadt Biddle Properties, Inc."
-ECOL,"US Ecology, Inc."
-USEG,US Energy Corp.
-USFD,US Foods Holding Corp.
-USWS,"US Well Services, Inc."
-USX,"US Xpress Enterprises, Inc."
-USAT,"USA Technologies, Inc."
-USAK,"USA Truck, Inc."
-USNA,"USANA Health Sciences, Inc."
-USIO,"USIO, Inc."
-UTMD,"Utah Medical Products, Inc."
-EGY,"VAALCO Energy, Inc."
-MTN,"Vail Resorts, Inc."
-VAL,Valaris Plc
-VLO,Valero Energy Corp.
-VLY,Valley National Bancorp
-VMI,"Valmont Industries, Inc."
-VALU,"Value Line, Inc."
-VVV,"Valvoline, Inc."
-VNDA,"Vanda Pharmaceuticals, Inc."
-VAPO,"Vapotherm, Inc."
-VREX,Varex Imaging Corp.
-VAR,"Varian Medical Systems, Inc."
-VRNS,"Varonis Systems, Inc."
-VXRT,"Vaxart, Inc."
-VBIV,"VBI Vaccines, Inc."
-VGR,Vector Group Ltd.
-VEC,"Vectrus, Inc."
-VECO,"Veeco Instruments, Inc."
-VEEV,"Veeva Systems, Inc."
-VNTR,Venator Materials Plc
-VTR,"Ventas, Inc."
-VNE,"Veoneer, Inc."
-VRA,"Vera Bradley, Inc."
-VCYT,"Veracyte, Inc."
-VSTM,"Verastem, Inc."
-VER,"VEREIT, Inc."
-VCEL,Vericel Corp.
-VRNT,"Verint Systems, Inc."
-VRSN,"VeriSign, Inc."
-VRSK,"Verisk Analytics, Inc."
-VBTX,"Veritex Holdings, Inc."
-VRTV,Veritiv Corp.
-VERI,"Veritone, Inc."
-VZ,"Verizon Communications, Inc."
-VRML,"Vermillion, Inc."
-VRRM,Verra Mobility Corp.
-VRS,Verso Corp.
-VTNR,"Vertex Energy, Inc."
-VRTX,"Vertex Pharmaceuticals, Inc."
-VERU,"Veru, Inc."
-VFC,VF Corp.
-CBS,"ViacomCBS, Inc."
-VVI,Viad Corp.
-VSAT,"ViaSat, Inc."
-VIAV,"Viavi Solutions, Inc."
-VICL,"Vical, Inc."
-VICI,"VICI Properties, Inc."
-VICR,Vicor Corp.
-VCTR,"Victory Capital Holdings, Inc."
-VRAY,"ViewRay, Inc."
-VKTX,"Viking Therapeutics, Inc."
-VBFC,Village Bank & Trust Financial Corp.
-VLGEA,"Village Super Market, Inc."
-VNCE,Vince Holding Corp.
-VIRC,Virco Manufacturing Corp.
-VHC,VirnetX Holding Corp.
-VIRT,"Virtu Financial, Inc."
-VRTS,"Virtus Investment Partners, Inc."
-VRTU,Virtusa Corp.
-V,"Visa, Inc."
-VSH,"Vishay Intertechnology, Inc."
-VPG,"Vishay Precision Group, Inc."
-VISL,"Vislink Technologies, Inc."
-VSTO,"Vista Outdoor, Inc."
-VC,Visteon Corp.
-VST,Vistra Corp.
-VSI,"Vitamin Shoppe, Inc."
-VSLR,"Vivint Solar, Inc."
-VVUS,"VIVUS, Inc."
-VMW,"VMware, Inc."
-VCRA,"Vocera Communications, Inc."
-VNRX,VolitionRX Ltd.
-VISI,"Volt Information Sciences, Inc."
-VG,Vonage Holdings Corp.
-VNO,Vornado Realty Trust
-VOXX,VOXX International Corp.
-VOYA,"Voya Financial, Inc."
-VYGR,"Voyager Therapeutics, Inc."
-VSEC,VSE Corp.
-VTVT,"vTv Therapeutics, Inc."
-VMC,Vulcan Materials Co.
-VUZI,Vuzix Corp.
-WTI,"W&T Offshore, Inc."
-WPC,"W.P. Carey, Inc."
-WRB,W.R. Berkley Corp.
-GRA,W.R. Grace & Co.
-GWW,"W.W. Grainger, Inc."
-WNC,Wabash National Corp.
-WBC,"WABCO Holdings, Inc."
-WDR,"Waddell & Reed Financial, Inc."
-WTRH,"Waitr Holdings, Inc."
-WBA,"Walgreens Boots Alliance, Inc."
-WD,"Walker & Dunlop, Inc."
-WMT,"Walmart, Inc."
-HCC,"Warrior Met Coal, Inc."
-WAFD,"Washington Federal, Inc."
-WPG,"Washington Prime Group, Inc."
-WRE,Washington Real Estate Investment Trust
-WASH,"Washington Trust Bancorp, Inc."
-WM,"Waste Management, Inc."
-WAT,Waters Corp.
-WSBF,"Waterstone Financial, Inc."
-WSO,"Watsco, Inc."
-WTS,"Watts Water Technologies, Inc."
-WVE,Wave Life Sciences Ltd.
-W,"Wayfair, Inc."
-WSTG,"Wayside Technology Group, Inc."
-WDFC,WD-40 Co.
-WBS,Webster Financial Corp.
-WEC,"WEC Energy Group, Inc."
-WRI,Weingarten Realty Investors
-WMK,"Weis Markets, Inc."
-WBT,"Welbilt, Inc."
-WCG,"WellCare Health Plans, Inc."
-WEBK,"Wellesley Bancorp, Inc."
-WFC,Wells Fargo & Co.
-WELL,"Welltower, Inc."
-WERN,"Werner Enterprises, Inc."
-WSBC,"WesBanco, Inc."
-WAIR,"Wesco Aircraft Holdings, Inc."
-WCC,"WESCO International, Inc."
-WTBA,"West Bancorporation, Inc."
-WST,"West Pharmaceutical Services, Inc."
-WABC,Westamerica Bancorporation
-WSTL,"Westell Technologies, Inc."
-WAL,Western Alliance Bancorporation
-WMC,Western Asset Mortgage Capital Corp.
-WDC,Western Digital Corp.
-WNEB,"Western New England Bancorp, Inc."
-WAB,Westinghouse Air Brake Technologies Corp.
-WLK,Westlake Chemical Corp.
-WRK,WestRock Co.
-WWR,"Westwater Resources, Inc."
-WHG,"Westwood Holdings Group, Inc."
-WEX,"WEX, Inc."
-WEYS,"Weyco Group, Inc."
-WY,Weyerhaeuser Co.
-WHLR,"Wheeler Real Estate Investment Trust, Inc."
-WHR,Whirlpool Corp.
-WTM,White Mountains Insurance Group Ltd.
-WSR,Whitestone REIT
-WLL,Whiting Petroleum Corp.
-WOW,"WideOpenWest, Inc."
-WYY,WidePoint Corp.
-WHLM,"Wilhelmina International, Inc."
-WVVI,"Willamette Valley Vineyards, Inc."
-WLDN,"Willdan Group, Inc."
-WLH,"William Lyon Homes, Inc."
-WSM,"Williams-Sonoma, Inc."
-WLFC,Willis Lease Finance Corp.
-WLTW,Willis Towers Watson Plc
-WSC,WillScot Mobile Mini Holdings Corp.
-WING,"Wingstop, Inc."
-WINA,Winmark Corp.
-WGO,"Winnebago Industries, Inc."
-WTFC,Wintrust Financial Corp.
-WTT,"Wireless Telecom Group, Inc."
-WETF,"WisdomTree Investments, Inc."
-WWW,"Wolverine World Wide, Inc."
-WWD,"Woodward, Inc."
-WDAY,"Workday, Inc."
-WKHS,"Workhorse Group, Inc."
-WK,"Workiva, Inc."
-WRLD,World Acceptance Corp.
-INT,World Fuel Services Corp.
-WWE,"World Wrestling Entertainment, Inc."
-WOR,"Worthington Industries, Inc."
-WPX,"WPX Energy, Inc."
-WRTC,"Wrap Technologies, Inc."
-WMGI,Wright Medical Group NV
-WSFS,WSFS Financial Corp.
-WVFC,WVS Financial Corp.
-WW,"WW International, Inc."
-WYND,"Wyndham Destinations, Inc."
-WH,"Wyndham Hotels & Resorts, Inc."
-WYNN,Wynn Resorts Ltd.
-XFOR,"X4 Pharmaceuticals, Inc."
-XBIT,"XBiotech, Inc."
-XELB,"XCel Brands, Inc."
-XEL,"Xcel Energy, Inc."
-XNCR,"Xencor, Inc."
-XHR,"Xenia Hotels & Resorts, Inc."
-XERS,"Xeris Pharmaceuticals, Inc."
-XRX,Xerox Holdings Corp.
-XLNX,"Xilinx, Inc."
-XOMA,XOMA Corp.
-XPER,Xperi Holding Corp.
-XPO,"XPO Logistics, Inc."
-XSPA,"XpresSpa Group, Inc."
-XTNT,"Xtant Medical Holdings, Inc."
-XYL,"Xylem, Inc."
-YELP,"Yelp, Inc."
-YETI,"YETI Holdings, Inc."
-YEXT,"Yext, Inc."
-YTEN,"Yield10 Bioscience, Inc."
-YMAB,"Y-mAbs Therapeutics, Inc."
 YORW,York Water Co.
 YRCW,"YRC Worldwide, Inc."
+YRCW,YRC Worldwide 
+YTEN,"Yield10 Bioscience, Inc."
+YTEN,Yield10 Bioscience 
 YUM,"Yum! Brands, Inc."
+YUM,Yum! Brands 
 YUMA,"Yuma Energy, Inc."
-CTIB,Yunhong CTI Ltd.
-ZFGN,"Zafgen, Inc."
+Z,"Zillow Group, Inc."
+Z,Zillow 
 ZAGG,"Zagg, Inc."
+ZAGG,ZAGG 
 ZAYO,"Zayo Group Holdings, Inc."
+ZBH,"Zimmer Biomet Holdings, Inc."
+ZBH,Zimmer Biomet 
+ZBRA,Zebra 
 ZBRA,Zebra Technologies Corp.
 ZDGE,"Zedge, Inc."
+ZDGE,Zedge 
 ZEN,"Zendesk, Inc."
-Z,"Zillow Group, Inc."
+ZEN,Zendesk 
+ZEUS,Olympic Steel 
+ZFGN,"Zafgen, Inc."
 ZG,"Zillow Group, Inc."
-ZBH,"Zimmer Biomet Holdings, Inc."
-ZN,"Zion Oil & Gas, Inc."
-ZION,"Zions Bancorporation, NA"
-ZIOP,"ZIOPHARM Oncology, Inc."
-ZIXI,Zix Corp.
-ZTS,"Zoetis, Inc."
+ZG,Zillow 
 ZGNX,"Zogenix, Inc."
+ZGNX,Zogenix 
+ZION,"Zions Bancorporation, NA"
+ZION,Zions Bancorp 
+ZIOP,"ZIOPHARM Oncology, Inc."
+ZIOP,ZIOPHARM Oncology 
+ZIXI,Zix 
+ZIXI,Zix Corp.
 ZM,"Zoom Video Communications, Inc."
-ZSAN,Zosano Pharma Corp.
-ZVO,"Zovio, Inc."
-ZS,"Zscaler, Inc."
-ZUMZ,"Zumiez, Inc."
-ZUO,"Zuora, Inc."
-ZYNE,"Zynerba Pharmaceuticals, Inc."
-ZYXI,"Zynex, Inc."
+ZM,Zoom Video 
+ZN,"Zion Oil & Gas, Inc."
+ZN,Zion Oil and Gas 
 ZNGA,"Zynga, Inc."
+ZNGA,Zynga 
+ZS,"Zscaler, Inc."
+ZS,Zscaler 
+ZSAN,Zosano Pharma 
+ZSAN,Zosano Pharma Corp.
+ZTS,"Zoetis, Inc."
+ZTS,Zoetis 
+ZUMZ,"Zumiez, Inc."
+ZUMZ,Zumiez 
+ZUO,"Zuora, Inc."
+ZUO,Zuora 
+ZVO,"Zovio, Inc."
+ZYNE,"Zynerba Pharmaceuticals, Inc."
+ZYNE,Zynerba Pharma 
+ZYXI,"Zynex, Inc."
