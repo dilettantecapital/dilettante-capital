@@ -104,18 +104,24 @@ wil <- read_csv("data/csv/wilshire.csv") %>%
     rename(symbol = ticker) %>%
     mutate(symbol = gsub("\\.", "-", symbol))
 
-sym <- wil$symbol
+sym <- wil %>%
+    pull(symbol) %>%
+    unique()
 
-for (x in sym) {
-    print(x)
-    tryCatch({
-        yahoo(x) %>%
-            write_csv(glue("data/bulk/{x}.csv"), progress = FALSE)
-    }, error = function(e) {})
-}
+str(sym)
+
+# for (x in sym) {
+#     print(x)
+#     tryCatch({
+#         yahoo(x) %>%
+#             write_csv(glue("data/bulk/{x}.csv"), progress = FALSE)
+#     }, error = function(e) {})
+# }
 
 dpath <- "data/bulk/"
 fpath <- paste0(dpath, list.files(dpath))
+
+str(fpath)
 
 lst <- lapply(fpath, vroom::vroom, progress = FALSE, show_col_types = FALSE)
 names(lst) <- gsub("\\.csv", "", list.files(dpath))
@@ -125,38 +131,63 @@ lst_mon <- lst %>%
     lapply(add_mom) %>%
     lapply(filter_month, 2024, 8)
 
+# df_mon <- lst_mon[[1]]
+# table(sapply(lst_mon, nrow))
+
 lst_calc <- lst_mon %>%
-    lapply(function(df) {
-        open <- df %>%
+    "["(21 <= sapply(., nrow)) %>%
+    lapply(function(df_mon) {
+        open <- df_mon %>%
             filter(date == min(date)) %>%
             pull(open)
 
-        close <- df %>%
+        close <- df_mon %>%
             filter(date == max(date)) %>%
             pull(close)
 
         change <- percent_change(open, close)
 
-        snr <- df %>%
+        snr <- df_mon %>%
             pull(mom) %>%
             na.omit() %>%
             (function(x) mean(x) / sd(x))
 
-        data.frame(sym = df$symbol[1],
-                    open = round(open, 2),
-                    close = round(close, 2),
-                    change = round(close - open, 2),
-                    percent = round((close - open) / open, 3),
-                    snr = round(snr, 2))
+        flow <- sum(df_mon$close * df_mon$volume)
+
+        data.frame(sym = df_mon$symbol[1],
+                   open = round(open, 2),
+                   close = round(close, 2),
+                   change = round(close - open, 2),
+                   percent = round((close - open) / open, 3),
+                   snr = round(snr, 2),
+                   flow = round(flow))
     })
 
 spx_calc <- lst_calc %>%
     do.call(rbind, .) %>%
-    unrowname()
+    unrowname() %>%
+    as_tibble() %>%
+    arrange(-flow)
 
-wil %>%
-    select(name = company, sym = symbol) %>%
-    left_join(spx_calc) %>%
+spx_calc %>%
+    write_csv(here("wilshire.csv"))
+
+spx_calc %>%
+    filter(median(flow, na.rm = TRUE) <= flow) %>%
+    left_join(wil %>% select(name = company, sym = symbol)) %>%
     select(name, sym, open, close, change, percent, snr) %>%
     arrange(-snr) %>%
     write_csv(here("picking.csv"))
+
+spx_calc %>%
+    with({
+        pdf(here("flow.pdf"), 9, 6)
+        op <- par(mar = c(5.75, 5, 5, 1.5))
+
+        plot(density(log10(na.omit(flow))),
+             main = "Wilshire 5000, August 2024\nDensity of Gross Flows",
+             xlab = "Flow (Logarithm Base 10)", ylab = "Density")
+
+        par(op)
+        dev.off()
+    })
