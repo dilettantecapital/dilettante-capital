@@ -1,0 +1,1 @@
+wget --quiet https://dilettantecapital.com/sitemap.xml --output-document - | egrep -o "https:[^<]+"
